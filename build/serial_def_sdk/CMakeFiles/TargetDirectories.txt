@@ -1,0 +1,11 @@
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/uninstall.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/serial_def_sdk_uninstall.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/uart.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/talker.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/test.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/edit_cache.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/rebuild_cache.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/list_install_components.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/install.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/install/local.dir
+/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/install/strip.dir

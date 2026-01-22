@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0c5523e8900e1e1e9e3e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "vision_msg__py",
+					"jsonFile" : "directory-vision_msg__py-d990c542c88db072226f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hjh/serial_new0122/build/vision_msg/vision_msg__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "vision_msg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_vision_msg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_vision_msg_egg-9babc9ad9cffa781fcbd.json",
+					"name" : "ament_cmake_python_build_vision_msg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_vision_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_vision_msg-6cf3b1bdf59daec46dc1.json",
+					"name" : "ament_cmake_python_copy_vision_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-65df85476cd5084b2abd.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg-5de83a25ef99cd3004b2.json",
+					"name" : "vision_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__cpp-ecf8da40da8c86e20f41.json",
+					"name" : "vision_msg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "vision_msg__py::@ab12799353a39fb2320a",
+					"jsonFile" : "target-vision_msg__py-f571a05df8a322beefe2.json",
+					"name" : "vision_msg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_generator_c-c563dda394e4ecc189f8.json",
+					"name" : "vision_msg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_generator_py-f098882082147f6503d1.json",
+					"name" : "vision_msg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_c-93da3e3faa2859e134fa.json",
+					"name" : "vision_msg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_c__pyext-f91bc0d45f7695c54816.json",
+					"name" : "vision_msg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_cpp-b98e5187885662502ede.json",
+					"name" : "vision_msg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_fastrtps_c-3a2196d840d53593770f.json",
+					"name" : "vision_msg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_fastrtps_c__pyext-c317bb653fd4fc5bf1af.json",
+					"name" : "vision_msg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_fastrtps_cpp-8c4eb906347167989a12.json",
+					"name" : "vision_msg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_introspection_c-c845674c042b59808f0f.json",
+					"name" : "vision_msg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_introspection_c__pyext-06f0fdf61b93dade2ad4.json",
+					"name" : "vision_msg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg__rosidl_typesupport_introspection_cpp-31a2eeb6303cf1f4ccad.json",
+					"name" : "vision_msg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msg_uninstall-7e52d0ceee864dca30fc.json",
+					"name" : "vision_msg_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hjh/serial_new0122/build/vision_msg",
+		"source" : "/home/hjh/serial_new0122/serial/vision_msg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

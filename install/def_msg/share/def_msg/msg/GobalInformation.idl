@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from def_msg/msg/GobalInformation.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module def_msg {
+  module msg {
+    @verbatim (language="comment", text=
+      "用于serial->系统" "\n"
+      "received heart_beat")
+    struct GobalInformation {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "剩下电量     0--100")
+      int32 battery;
+
+      @verbatim (language="comment", text=
+        "剩下生命  0--100")
+      int32 life_extra;
+
+      @verbatim (language="comment", text=
+        "装甲板颜色")
+      int32 color;
+
+      @verbatim (language="comment", text=
+        "剩余子弹 0-255")
+      int32 bullet_extra;
+
+      @verbatim (language="comment", text=
+        "故障指示电控方面")
+      int32 fault_flag;
+
+      @verbatim (language="comment", text=
+        "additional data")
+      boolean launch;
+
+      boolean arm;
+
+      int32 base_hp_our;
+
+      int32 base_hp_enemy;
+
+      int32 judge_warning;
+
+      @verbatim (language="comment", text=
+        "game_data")
+      int64 stage_remain_time;
+
+      int32 game_progress;
+    };
+  };
+};

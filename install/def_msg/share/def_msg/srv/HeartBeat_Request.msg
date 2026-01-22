@@ -1,0 +1,4 @@
+std_msgs/Header header
+bool set_launch
+bool set_arm
+int32 fault_flag

@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from def_msg/action/NavPose.action
+// generated code does not contain a copyright notice
+
+
+module def_msg {
+  module action {
+    struct NavPose_Goal {
+      sequence<float> x;
+
+      sequence<float> y;
+
+      sequence<float> w;
+
+      @verbatim (language="comment", text=
+        "航点数量")
+      int32 order;
+    };
+    struct NavPose_Result {
+      boolean reached;
+    };
+    struct NavPose_Feedback {
+      float dis_x;
+
+      float dis_y;
+
+      float dis_w;
+    };
+  };
+};

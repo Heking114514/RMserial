@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "arrarylist.h": "c",
+        "crc8.h": "c",
+        "crc.h": "c",
+        "stdint.h": "c"
+    }
+}

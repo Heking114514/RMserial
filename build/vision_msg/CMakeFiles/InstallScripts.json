@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/hjh/serial_new0122/build/vision_msg/cmake_install.cmake",
+		"/home/hjh/serial_new0122/build/vision_msg/vision_msg__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
