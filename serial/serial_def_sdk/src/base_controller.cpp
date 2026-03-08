@@ -73,16 +73,17 @@ void BaseController::send_merged_control() {
   // ================== 2. 处理互斥逻辑 (保持不变) ==================
   
   if (abs(current_spin_speed) > 0.001) {
-      // [小陀螺模式] 覆盖底盘速度
-      fix_control_send.vx = 0.0;
-      fix_control_send.vy = 0.0;
+      // [小陀螺模式] 赋值 spin，但不再清零 vx 和 vy
       fix_control_send.spin = current_spin_speed;
+      
+      // 注意：一般开启小陀螺时，底盘的高频自转由 spin 控制。
+      // 如果你希望此时忽略导航发来的常规转向(vz)，可以加上下面这句：
+      // fix_control_send.vz = 0.0; 
   } else {
       // [正常模式] 确保 spin 为 0
       fix_control_send.spin = 0.0;
-      // vx, vy, vz 使用上面的值 (如果超时已经被置0了，如果没超时就是最新值)
+      // vx, vy, vz 使用上面的值 (正常平移和转向)
   }
-
   // ================== 3. 发送数据 ==================
   // 无论是否有数据，我们都以 50Hz 发送。
   // 如果所有话题都超时，这里发出去的就是全 0 包，机器人会安全停止。

@@ -1,0 +1,707 @@
+[0.000000] (-) TimerEvent: {}
+[0.000317] (def_msg) JobQueued: {'identifier': 'def_msg', 'dependencies': OrderedDict()}
+[0.000455] (vision_msg) JobQueued: {'identifier': 'vision_msg', 'dependencies': OrderedDict()}
+[0.000621] (serial_def_sdk) JobQueued: {'identifier': 'serial_def_sdk', 'dependencies': OrderedDict([('def_msg', '/home/hjh/serial_new0122/install/def_msg'), ('vision_msg', '/home/hjh/serial_new0122/install/vision_msg')])}
+[0.000786] (def_msg) JobStarted: {'identifier': 'def_msg'}
+[0.004929] (vision_msg) JobStarted: {'identifier': 'vision_msg'}
+[0.009201] (def_msg) JobProgress: {'identifier': 'def_msg', 'progress': 'cmake'}
+[0.010092] (def_msg) JobProgress: {'identifier': 'def_msg', 'progress': 'build'}
+[0.010108] (def_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjh/serial_new0122/build/def_msg', '--', '-j16', '-l16'], 'cwd': '/home/hjh/serial_new0122/build/def_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/def_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble')]), 'shell': False}
+[0.012808] (vision_msg) JobProgress: {'identifier': 'vision_msg', 'progress': 'cmake'}
+[0.013140] (vision_msg) JobProgress: {'identifier': 'vision_msg', 'progress': 'build'}
+[0.013687] (vision_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjh/serial_new0122/build/vision_msg', '--', '-j16', '-l16'], 'cwd': '/home/hjh/serial_new0122/build/vision_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/vision_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble')]), 'shell': False}
+[0.042159] (def_msg) StdoutLine: {'line': b'[  1%] Built target def_msg__cpp\n'}
+[0.046312] (vision_msg) StdoutLine: {'line': b'[  2%] Built target vision_msg__cpp\n'}
+[0.049588] (vision_msg) StdoutLine: {'line': b'[ 12%] Built target vision_msg__rosidl_generator_c\n'}
+[0.049957] (vision_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_vision_msg\n'}
+[0.050964] (def_msg) StdoutLine: {'line': b'[ 12%] Built target def_msg__rosidl_generator_c\n'}
+[0.056334] (def_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_def_msg\n'}
+[0.074853] (vision_msg) StdoutLine: {'line': b'[ 23%] Built target vision_msg__rosidl_typesupport_c\n'}
+[0.075639] (vision_msg) StdoutLine: {'line': b'[ 34%] Built target vision_msg__rosidl_typesupport_cpp\n'}
+[0.076935] (vision_msg) StdoutLine: {'line': b'[ 44%] Built target vision_msg__rosidl_typesupport_introspection_c\n'}
+[0.077231] (vision_msg) StdoutLine: {'line': b'[ 55%] Built target vision_msg__rosidl_typesupport_introspection_cpp\n'}
+[0.080030] (vision_msg) StdoutLine: {'line': b'[ 65%] Built target vision_msg__rosidl_typesupport_fastrtps_c\n'}
+[0.080420] (vision_msg) StdoutLine: {'line': b'[ 76%] Built target vision_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.082960] (def_msg) StdoutLine: {'line': b'[ 24%] Built target def_msg__rosidl_typesupport_c\n'}
+[0.084460] (def_msg) StdoutLine: {'line': b'[ 35%] Built target def_msg__rosidl_typesupport_cpp\n'}
+[0.086666] (def_msg) StdoutLine: {'line': b'[ 47%] Built target def_msg__rosidl_typesupport_introspection_cpp\n'}
+[0.088144] (def_msg) StdoutLine: {'line': b'[ 58%] Built target def_msg__rosidl_typesupport_introspection_c\n'}
+[0.089746] (def_msg) StdoutLine: {'line': b'[ 70%] Built target def_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.091897] (def_msg) StdoutLine: {'line': b'[ 81%] Built target def_msg__rosidl_typesupport_fastrtps_c\n'}
+[0.093600] (vision_msg) StdoutLine: {'line': b'[ 76%] Built target vision_msg\n'}
+[0.099899] (-) TimerEvent: {}
+[0.103578] (def_msg) StdoutLine: {'line': b'[ 81%] Built target def_msg\n'}
+[0.104205] (vision_msg) StdoutLine: {'line': b'[ 78%] Built target vision_msg__py\n'}
+[0.116688] (def_msg) StdoutLine: {'line': b'[ 82%] Built target def_msg__py\n'}
+[0.121383] (vision_msg) StdoutLine: {'line': b'[ 87%] Built target vision_msg__rosidl_generator_py\n'}
+[0.136986] (vision_msg) StdoutLine: {'line': b'[100%] Built target vision_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.137256] (vision_msg) StdoutLine: {'line': b'[100%] Built target vision_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.137376] (vision_msg) StdoutLine: {'line': b'[100%] Built target vision_msg__rosidl_typesupport_c__pyext\n'}
+[0.141117] (def_msg) StdoutLine: {'line': b'[ 93%] Built target def_msg__rosidl_generator_py\n'}
+[0.155221] (def_msg) StdoutLine: {'line': b'[ 95%] Built target def_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.156079] (def_msg) StdoutLine: {'line': b'[ 97%] Built target def_msg__rosidl_typesupport_c__pyext\n'}
+[0.157085] (def_msg) StdoutLine: {'line': b'[100%] Built target def_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.200029] (-) TimerEvent: {}
+[0.237680] (def_msg) StdoutLine: {'line': b'running egg_info\n'}
+[0.238473] (vision_msg) StdoutLine: {'line': b'running egg_info\n'}
+[0.238680] (def_msg) StdoutLine: {'line': b'writing def_msg.egg-info/PKG-INFO\n'}
+[0.238888] (def_msg) StdoutLine: {'line': b'writing dependency_links to def_msg.egg-info/dependency_links.txt\n'}
+[0.239003] (vision_msg) StdoutLine: {'line': b'writing vision_msg.egg-info/PKG-INFO\n'}
+[0.239189] (vision_msg) StdoutLine: {'line': b'writing dependency_links to vision_msg.egg-info/dependency_links.txt\n'}
+[0.239226] (vision_msg) StdoutLine: {'line': b'writing top-level names to vision_msg.egg-info/top_level.txt\n'}
+[0.239287] (def_msg) StdoutLine: {'line': b'writing top-level names to def_msg.egg-info/top_level.txt\n'}
+[0.240664] (vision_msg) StdoutLine: {'line': b"reading manifest file 'vision_msg.egg-info/SOURCES.txt'\n"}
+[0.240738] (def_msg) StdoutLine: {'line': b"reading manifest file 'def_msg.egg-info/SOURCES.txt'\n"}
+[0.240981] (vision_msg) StdoutLine: {'line': b"writing manifest file 'vision_msg.egg-info/SOURCES.txt'\n"}
+[0.241051] (def_msg) StdoutLine: {'line': b"writing manifest file 'def_msg.egg-info/SOURCES.txt'\n"}
+[0.257650] (vision_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_vision_msg_egg\n'}
+[0.258689] (def_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_def_msg_egg\n'}
+[0.264193] (vision_msg) CommandEnded: {'returncode': 0}
+[0.264993] (vision_msg) JobProgress: {'identifier': 'vision_msg', 'progress': 'install'}
+[0.270087] (vision_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hjh/serial_new0122/build/vision_msg'], 'cwd': '/home/hjh/serial_new0122/build/vision_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/vision_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble')]), 'shell': False}
+[0.271376] (def_msg) CommandEnded: {'returncode': 0}
+[0.271788] (def_msg) JobProgress: {'identifier': 'def_msg', 'progress': 'install'}
+[0.272036] (def_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hjh/serial_new0122/build/def_msg'], 'cwd': '/home/hjh/serial_new0122/build/def_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/def_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble')]), 'shell': False}
+[0.273845] (vision_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.274182] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/ament_index/resource_index/rosidl_interfaces/vision_msg\n'}
+[0.274335] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.274499] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.274708] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.274898] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.275019] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__functions.h\n'}
+[0.275190] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__struct.h\n'}
+[0.275391] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__functions.h\n'}
+[0.275448] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.h\n'}
+[0.275485] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__functions.h\n'}
+[0.275517] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.h\n'}
+[0.275548] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__struct.h\n'}
+[0.275586] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.h\n'}
+[0.275664] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__functions.c\n'}
+[0.275795] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__functions.c\n'}
+[0.275837] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__struct.h\n'}
+[0.275913] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__functions.c\n'}
+[0.275949] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detected_id.h\n'}
+[0.275982] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/selected_id.h\n'}
+[0.276015] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/gimble_position.h\n'}
+[0.276047] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/library_path.sh\n'}
+[0.276078] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/library_path.dsv\n'}
+[0.276108] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_generator_c.so\n'}
+[0.276205] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.276237] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.276268] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.276304] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_fastrtps_c.h\n'}
+[0.276336] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_c.h\n'}
+[0.276367] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_fastrtps_c.h\n'}
+[0.276397] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.276426] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.276455] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.276484] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.276514] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.276542] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_introspection_c.h\n'}
+[0.276583] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.c\n'}
+[0.276649] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_introspection_c.h\n'}
+[0.276746] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.c\n'}
+[0.276795] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_c.h\n'}
+[0.277013] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.c\n'}
+[0.277172] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.277306] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_c.so\n'}
+[0.277347] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_c.so\n'}
+[0.277494] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.277648] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.277760] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/selected_id.hpp\n'}
+[0.277839] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/gimble_position.hpp\n'}
+[0.277927] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detected_id.hpp\n'}
+[0.278003] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.278128] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.hpp\n'}
+[0.278225] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__struct.hpp\n'}
+[0.278301] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.hpp\n'}
+[0.278375] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__traits.hpp\n'}
+[0.278449] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__builder.hpp\n'}
+[0.278523] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.hpp\n'}
+[0.278756] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__traits.hpp\n'}
+[0.278843] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__builder.hpp\n'}
+[0.278915] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__struct.hpp\n'}
+[0.278989] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__builder.hpp\n'}
+[0.279089] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__struct.hpp\n'}
+[0.279164] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__traits.hpp\n'}
+[0.279239] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.279313] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.279387] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.279461] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.279536] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.279621] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/dds_fastrtps\n'}
+[0.279699] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.279776] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.279852] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.279928] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.280038] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg\n'}
+[0.280114] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg\n'}
+[0.280189] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail\n'}
+[0.280263] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.cpp\n'}
+[0.280339] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.cpp\n'}
+[0.280414] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.280490] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.280571] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.cpp\n'}
+[0.280768] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.280843] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.280915] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_cpp.so\n'}
+[0.280987] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/pythonpath.sh\n'}
+[0.281059] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/pythonpath.dsv\n'}
+[0.281130] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info\n'}
+[0.281201] (def_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.281286] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/ament_index/resource_index/rosidl_interfaces/def_msg\n'}
+[0.281364] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.281439] (vision_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.281512] (vision_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.281628] (vision_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.281706] (vision_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.281778] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg\n'}
+[0.281849] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.281929] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.282004] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.282077] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/__init__.py\n'}
+[0.282149] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/libvision_msg__rosidl_generator_py.so\n'}
+[0.282220] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_c.c\n'}
+[0.282294] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg\n'}
+[0.282367] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_selected_id.py\n'}
+[0.282439] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_selected_id_s.c\n'}
+[0.282511] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_detected_id.py\n'}
+[0.282594] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_gimble_position_s.c\n'}
+[0.282670] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/__init__.py\n'}
+[0.282740] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_gimble_position.py\n'}
+[0.282810] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_detected_id_s.c\n'}
+[0.282880] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.282951] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.283021] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.283099] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.283176] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__functions.h\n'}
+[0.283252] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__struct.h\n'}
+[0.283327] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__functions.h\n'}
+[0.283402] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__type_support.h\n'}
+[0.283477] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__functions.c\n'}
+[0.283552] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__struct.h\n'}
+[0.283636] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__functions.c\n'}
+[0.283717] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__type_support.h\n'}
+[0.283792] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/controller_mode_set.h\n'}
+[0.283866] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/heart_beat.h\n'}
+[0.283941] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.284016] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.284091] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_control.h\n'}
+[0.284165] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/em_control.h\n'}
+[0.284239] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.284320] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__type_support.h\n'}
+[0.284395] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__struct.h\n'}
+[0.284469] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__functions.c\n'}
+[0.284543] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__functions.h\n'}
+[0.284625] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__functions.h\n'}
+[0.284701] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__struct.h\n'}
+[0.284775] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.h\n'}
+[0.284848] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__type_support.h\n'}
+[0.284930] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__struct.h\n'}
+[0.285001] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__struct.h\n'}
+[0.285071] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__struct.h\n'}
+[0.285141] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__functions.h\n'}
+[0.285211] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__functions.h\n'}
+[0.285280] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__functions.c\n'}
+[0.285350] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__functions.h\n'}
+[0.285420] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__functions.c\n'}
+[0.285490] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.h\n'}
+[0.285567] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__type_support.h\n'}
+[0.285645] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__functions.c\n'}
+[0.285716] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__functions.c\n'}
+[0.285786] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/common_control.h\n'}
+[0.285856] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gobal_information.h\n'}
+[0.285925] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_position.h\n'}
+[0.285993] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.286060] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.286128] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__type_support.h\n'}
+[0.286195] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__struct.h\n'}
+[0.286262] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__functions.h\n'}
+[0.286330] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__functions.c\n'}
+[0.286397] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/nav_pose.h\n'}
+[0.286464] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/library_path.sh\n'}
+[0.286531] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/library_path.dsv\n'}
+[0.286607] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_c.so\n'}
+[0.286680] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.286754] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.286822] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.286890] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__rosidl_typesupport_fastrtps_c.h\n'}
+[0.286957] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287026] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.287096] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.287165] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287234] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287304] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287378] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287448] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287528] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.287610] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.287686] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.287756] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.287826] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.287896] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.287967] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.288036] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/heart_beat.hpp\n'}
+[0.288104] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.288173] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__traits.hpp\n'}
+[0.288244] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__type_support.hpp\n'}
+[0.288316] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__type_support.hpp\n'}
+[0.288385] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__struct.hpp\n'}
+[0.288458] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__traits.hpp\n'}
+[0.288528] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__builder.hpp\n'}
+[0.288637] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__builder.hpp\n'}
+[0.288721] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__struct.hpp\n'}
+[0.288756] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/controller_mode_set.hpp\n'}
+[0.288788] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.288817] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_position.hpp\n'}
+[0.288845] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.288873] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__builder.hpp\n'}
+[0.288903] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__type_support.hpp\n'}
+[0.288941] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__type_support.hpp\n'}
+[0.288970] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__builder.hpp\n'}
+[0.288998] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__struct.hpp\n'}
+[0.289024] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__builder.hpp\n'}
+[0.289053] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__type_support.hpp\n'}
+[0.289080] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__struct.hpp\n'}
+[0.289107] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__traits.hpp\n'}
+[0.289134] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__struct.hpp\n'}
+[0.289160] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__traits.hpp\n'}
+[0.289185] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.hpp\n'}
+[0.289212] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__traits.hpp\n'}
+[0.289239] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__builder.hpp\n'}
+[0.289266] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__struct.hpp\n'}
+[0.289300] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__traits.hpp\n'}
+[0.289328] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__builder.hpp\n'}
+[0.289355] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.hpp\n'}
+[0.289380] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__struct.hpp\n'}
+[0.289406] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__traits.hpp\n'}
+[0.289432] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/em_control.hpp\n'}
+[0.289459] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gobal_information.hpp\n'}
+[0.289486] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.289513] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_control.hpp\n'}
+[0.289542] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/common_control.hpp\n'}
+[0.289579] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.289610] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.289638] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__type_support.hpp\n'}
+[0.289669] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__struct.hpp\n'}
+[0.289699] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__traits.hpp\n'}
+[0.289727] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__builder.hpp\n'}
+[0.289755] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/nav_pose.hpp\n'}
+[0.289782] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.289810] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.289839] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.289868] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/dds_fastrtps\n'}
+[0.289896] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.289927] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.289956] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.289985] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.290015] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/dds_fastrtps\n'}
+[0.290043] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290072] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290101] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290131] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290160] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290188] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.290218] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.290248] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.290277] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/dds_fastrtps\n'}
+[0.290307] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.290341] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.290370] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.290401] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.290430] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.290459] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__type_support.c\n'}
+[0.290488] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__rosidl_typesupport_introspection_c.h\n'}
+[0.290518] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__type_support.c\n'}
+[0.290547] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__rosidl_typesupport_introspection_c.h\n'}
+[0.290586] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.290614] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.290642] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__rosidl_typesupport_introspection_c.h\n'}
+[0.290669] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__type_support.c\n'}
+[0.290697] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__type_support.c\n'}
+[0.290724] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.c\n'}
+[0.290752] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__rosidl_typesupport_introspection_c.h\n'}
+[0.290780] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_c.h\n'}
+[0.290812] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__type_support.c\n'}
+[0.290840] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__rosidl_typesupport_introspection_c.h\n'}
+[0.290868] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__rosidl_typesupport_introspection_c.h\n'}
+[0.290896] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.c\n'}
+[0.290923] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.290950] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.290977] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.291004] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__type_support.c\n'}
+[0.291031] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__rosidl_typesupport_introspection_c.h\n'}
+[0.291057] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_c.so\n'}
+[0.291084] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so\n'}
+[0.291113] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg\n'}
+[0.291139] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv\n'}
+[0.291165] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail\n'}
+[0.291190] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291217] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__type_support.cpp\n'}
+[0.291244] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/heart_beat__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291270] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/srv/detail/controller_mode_set__type_support.cpp\n'}
+[0.291297] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg\n'}
+[0.291326] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail\n'}
+[0.291352] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291379] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.cpp\n'}
+[0.291406] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291432] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__type_support.cpp\n'}
+[0.291457] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gobal_information__type_support.cpp\n'}
+[0.291484] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__type_support.cpp\n'}
+[0.291511] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/em_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291539] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291572] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.cpp\n'}
+[0.291606] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/common_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291637] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action\n'}
+[0.291666] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail\n'}
+[0.291695] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.291723] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/action/detail/nav_pose__type_support.cpp\n'}
+[0.291750] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.291780] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_cpp.so\n'}
+[0.291806] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/pythonpath.sh\n'}
+[0.291833] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/pythonpath.dsv\n'}
+[0.291860] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg-0.0.0-py3.10.egg-info\n'}
+[0.291885] (def_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.291912] (def_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.291937] (def_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.291963] (def_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.291988] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg\n'}
+[0.292013] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/_def_msg_s.ep.rosidl_typesupport_c.c\n'}
+[0.292039] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.292065] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.292092] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/_def_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.292118] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/__init__.py\n'}
+[0.292143] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv\n'}
+[0.292168] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv/_heart_beat.py\n'}
+[0.292193] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv/_controller_mode_set.py\n'}
+[0.292223] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv/_heart_beat_s.c\n'}
+[0.292248] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv/_controller_mode_set_s.c\n'}
+[0.292274] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv/__init__.py\n'}
+[0.292299] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/_def_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.292325] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.292350] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/libdef_msg__rosidl_generator_py.so\n'}
+[0.292377] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg\n'}
+[0.292402] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gobal_information_s.c\n'}
+[0.292428] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_common_control.py\n'}
+[0.292453] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gimble_control_s.c\n'}
+[0.292482] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gimble_position_s.c\n'}
+[0.292508] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/__init__.py\n'}
+[0.292533] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_common_control_s.c\n'}
+[0.292557] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gobal_information.py\n'}
+[0.292590] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gimble_position.py\n'}
+[0.292616] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_em_control.py\n'}
+[0.292640] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_em_control_s.c\n'}
+[0.292664] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg/_gimble_control.py\n'}
+[0.292688] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/action\n'}
+[0.292713] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/action/__init__.py\n'}
+[0.292739] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/action/_nav_pose_s.c\n'}
+[0.292764] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/action/_nav_pose.py\n'}
+[0.298435] (vision_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg'...\n"}
+[0.298482] (vision_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg'...\n"}
+[0.300118] (-) TimerEvent: {}
+[0.301429] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.301676] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.301786] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.301822] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_generator_py.so\n'}
+[0.301868] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/GimblePosition.idl\n'}
+[0.301928] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/DetectedId.idl\n'}
+[0.301999] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/SelectedId.idl\n'}
+[0.302052] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/GimblePosition.msg\n'}
+[0.302095] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/DetectedId.msg\n'}
+[0.302136] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/msg/SelectedId.msg\n'}
+[0.302164] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/ament_index/resource_index/package_run_dependencies/vision_msg\n'}
+[0.302206] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/ament_index/resource_index/parent_prefix_path/vision_msg\n'}
+[0.302248] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/ament_prefix_path.sh\n'}
+[0.302292] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/ament_prefix_path.dsv\n'}
+[0.302337] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/path.sh\n'}
+[0.302365] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/environment/path.dsv\n'}
+[0.302397] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/local_setup.bash\n'}
+[0.302440] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/local_setup.sh\n'}
+[0.302491] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/local_setup.zsh\n'}
+[0.302538] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/local_setup.dsv\n'}
+[0.302569] (vision_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/package.dsv\n'}
+[0.302618] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/ament_index/resource_index/packages/vision_msg\n'}
+[0.302670] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cExport.cmake\n'}
+[0.302719] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.302761] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.302787] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.302812] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.302837] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.302862] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cExport.cmake\n'}
+[0.302887] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.302911] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cppExport.cmake\n'}
+[0.302938] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.302964] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.302988] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.303013] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.303038] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cppExport.cmake\n'}
+[0.303063] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.303087] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_pyExport.cmake\n'}
+[0.303111] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.303135] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.303159] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.303183] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.303208] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.303232] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.303257] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.303282] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.303306] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msgConfig.cmake\n'}
+[0.303331] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/cmake/vision_msgConfig-version.cmake\n'}
+[0.303358] (vision_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/vision_msg/share/vision_msg/package.xml\n'}
+[0.304080] (vision_msg) CommandEnded: {'returncode': 0}
+[0.304485] (def_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg'...\n"}
+[0.304532] (def_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/action'...\n"}
+[0.304565] (def_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/msg'...\n"}
+[0.304652] (def_msg) StdoutLine: {'line': b"Listing '/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/srv'...\n"}
+[0.307175] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.307239] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.307324] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages/def_msg/def_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.307387] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_py.so\n'}
+[0.307496] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GobalInformation.idl\n'}
+[0.307604] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GimbleControl.idl\n'}
+[0.307727] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/CommonControl.idl\n'}
+[0.307904] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/EmControl.idl\n'}
+[0.307936] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GimblePosition.idl\n'}
+[0.307965] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/ControllerModeSet.idl\n'}
+[0.307995] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/HeartBeat.idl\n'}
+[0.308117] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/action/NavPose.idl\n'}
+[0.308215] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GobalInformation.msg\n'}
+[0.308246] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GimbleControl.msg\n'}
+[0.308276] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/CommonControl.msg\n'}
+[0.308305] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/EmControl.msg\n'}
+[0.308333] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/msg/GimblePosition.msg\n'}
+[0.308363] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/ControllerModeSet.srv\n'}
+[0.308391] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/ControllerModeSet_Request.msg\n'}
+[0.308448] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/ControllerModeSet_Response.msg\n'}
+[0.308583] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/HeartBeat.srv\n'}
+[0.308616] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/HeartBeat_Request.msg\n'}
+[0.308646] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/srv/HeartBeat_Response.msg\n'}
+[0.308674] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/action/NavPose.action\n'}
+[0.308705] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/ament_index/resource_index/package_run_dependencies/def_msg\n'}
+[0.308735] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/ament_index/resource_index/parent_prefix_path/def_msg\n'}
+[0.308872] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/ament_prefix_path.sh\n'}
+[0.308906] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/ament_prefix_path.dsv\n'}
+[0.308937] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/path.sh\n'}
+[0.308967] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/environment/path.dsv\n'}
+[0.308995] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/local_setup.bash\n'}
+[0.309024] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/local_setup.sh\n'}
+[0.309051] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/local_setup.zsh\n'}
+[0.309078] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/local_setup.dsv\n'}
+[0.309105] (def_msg) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/def_msg/share/def_msg/package.dsv\n'}
+[0.309131] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/ament_index/resource_index/packages/def_msg\n'}
+[0.309202] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_generator_cExport.cmake\n'}
+[0.309231] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.309258] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.309285] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.309313] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_generator_cppExport.cmake\n'}
+[0.309340] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.309366] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.309394] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.309421] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.309503] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_cExport.cmake\n'}
+[0.309807] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.309867] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.309895] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.309922] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_cppExport.cmake\n'}
+[0.309950] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.309978] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_generator_pyExport.cmake\n'}
+[0.310011] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/export_def_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.310041] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.310069] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.310096] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.310123] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.310150] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.310177] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.310203] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.310230] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msgConfig.cmake\n'}
+[0.310258] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/cmake/def_msgConfig-version.cmake\n'}
+[0.310284] (def_msg) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/def_msg/share/def_msg/package.xml\n'}
+[0.318354] (vision_msg) JobEnded: {'identifier': 'vision_msg', 'rc': 0}
+[0.319130] (def_msg) CommandEnded: {'returncode': 0}
+[0.330593] (def_msg) JobEnded: {'identifier': 'def_msg', 'rc': 0}
+[0.330918] (serial_def_sdk) JobStarted: {'identifier': 'serial_def_sdk'}
+[0.339933] (serial_def_sdk) JobProgress: {'identifier': 'serial_def_sdk', 'progress': 'cmake'}
+[0.340296] (serial_def_sdk) JobProgress: {'identifier': 'serial_def_sdk', 'progress': 'build'}
+[0.340435] (serial_def_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hjh/serial_new0122/build/serial_def_sdk', '--', '-j16', '-l16'], 'cwd': '/home/hjh/serial_new0122/build/serial_def_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/serial_def_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/home/hjh/serial_new0122/install/serial_def_sdk:/opt/ros/humble')]), 'shell': False}
+[0.386715] (serial_def_sdk) StdoutLine: {'line': b'[ 18%] Built target talker\n'}
+[0.393297] (serial_def_sdk) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/uart.dir/src/base_controller.cpp.o\x1b[0m\n'}
+[0.400260] (-) TimerEvent: {}
+[0.500589] (-) TimerEvent: {}
+[0.600849] (-) TimerEvent: {}
+[0.701114] (-) TimerEvent: {}
+[0.801369] (-) TimerEvent: {}
+[0.901629] (-) TimerEvent: {}
+[1.001865] (-) TimerEvent: {}
+[1.102140] (-) TimerEvent: {}
+[1.202385] (-) TimerEvent: {}
+[1.302653] (-) TimerEvent: {}
+[1.402917] (-) TimerEvent: {}
+[1.503179] (-) TimerEvent: {}
+[1.603451] (-) TimerEvent: {}
+[1.703683] (-) TimerEvent: {}
+[1.803933] (-) TimerEvent: {}
+[1.904256] (-) TimerEvent: {}
+[2.004500] (-) TimerEvent: {}
+[2.104730] (-) TimerEvent: {}
+[2.130889] (serial_def_sdk) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./include/serial/base_controller.h:24\x1b[m\x1b[K,\n'}
+[2.131015] (serial_def_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/src/base_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.131054] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KUartLinux::UartLinux(std::string, int, char, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.131085] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:17:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuart_name\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.131117] (serial_def_sdk) StderrLine: {'line': b'   17 |     UartLinux(\x1b[01;35m\x1b[Kstring uart_name = "/dev/ttyUSB0"\x1b[m\x1b[K, int nSpeed = 115200, char nEvent = \'N\', int nBits = 8, int nStop = 1) {}\n'}
+[2.131147] (serial_def_sdk) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131175] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:17:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KnSpeed\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.131205] (serial_def_sdk) StderrLine: {'line': b'   17 |     UartLinux(string uart_name = "/dev/ttyUSB0", \x1b[01;35m\x1b[Kint nSpeed = 115200\x1b[m\x1b[K, char nEvent = \'N\', int nBits = 8, int nStop = 1) {}\n'}
+[2.131233] (serial_def_sdk) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131260] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:17:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KnEvent\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.131288] (serial_def_sdk) StderrLine: {'line': b'   17 | tring uart_name = "/dev/ttyUSB0", int nSpeed = 115200, \x1b[01;35m\x1b[Kchar nEvent = \'N\'\x1b[m\x1b[K, int nBits = 8, int nStop = 1) {}\n'}
+[2.131316] (serial_def_sdk) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131342] (serial_def_sdk) StderrLine: {'line': b'\n'}
+[2.131367] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:17:94:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KnBits\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.131394] (serial_def_sdk) StderrLine: {'line': b'   17 | "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = \'N\', \x1b[01;35m\x1b[Kint nBits = 8\x1b[m\x1b[K, int nStop = 1) {}\n'}
+[2.131425] (serial_def_sdk) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131451] (serial_def_sdk) StderrLine: {'line': b'\n'}
+[2.131477] (serial_def_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hjh/serial_new0122/serial/serial_def_sdk/./uart/uart_hd.h:17:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KnStop\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.131504] (serial_def_sdk) StderrLine: {'line': b"   17 |  int nSpeed = 115200, char nEvent = 'N', int nBits = 8, \x1b[01;35m\x1b[Kint nStop = 1\x1b[m\x1b[K) {}\n"}
+[2.131530] (serial_def_sdk) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131556] (serial_def_sdk) StderrLine: {'line': b'\n'}
+[2.204831] (-) TimerEvent: {}
+[2.305119] (-) TimerEvent: {}
+[2.405379] (-) TimerEvent: {}
+[2.505640] (-) TimerEvent: {}
+[2.605869] (-) TimerEvent: {}
+[2.706115] (-) TimerEvent: {}
+[2.806401] (-) TimerEvent: {}
+[2.906684] (-) TimerEvent: {}
+[3.006960] (-) TimerEvent: {}
+[3.107244] (-) TimerEvent: {}
+[3.207540] (-) TimerEvent: {}
+[3.307794] (-) TimerEvent: {}
+[3.408055] (-) TimerEvent: {}
+[3.508327] (-) TimerEvent: {}
+[3.608603] (-) TimerEvent: {}
+[3.708865] (-) TimerEvent: {}
+[3.809141] (-) TimerEvent: {}
+[3.909389] (-) TimerEvent: {}
+[4.009668] (-) TimerEvent: {}
+[4.109900] (-) TimerEvent: {}
+[4.210174] (-) TimerEvent: {}
+[4.310449] (-) TimerEvent: {}
+[4.410738] (-) TimerEvent: {}
+[4.511057] (-) TimerEvent: {}
+[4.611442] (-) TimerEvent: {}
+[4.711736] (-) TimerEvent: {}
+[4.811981] (-) TimerEvent: {}
+[4.912365] (-) TimerEvent: {}
+[5.012712] (-) TimerEvent: {}
+[5.112943] (-) TimerEvent: {}
+[5.213293] (-) TimerEvent: {}
+[5.313682] (-) TimerEvent: {}
+[5.413974] (-) TimerEvent: {}
+[5.514324] (-) TimerEvent: {}
+[5.614682] (-) TimerEvent: {}
+[5.715028] (-) TimerEvent: {}
+[5.815359] (-) TimerEvent: {}
+[5.915696] (-) TimerEvent: {}
+[6.015943] (-) TimerEvent: {}
+[6.116210] (-) TimerEvent: {}
+[6.216572] (-) TimerEvent: {}
+[6.316809] (-) TimerEvent: {}
+[6.417050] (-) TimerEvent: {}
+[6.517288] (-) TimerEvent: {}
+[6.617544] (-) TimerEvent: {}
+[6.717789] (-) TimerEvent: {}
+[6.818030] (-) TimerEvent: {}
+[6.918289] (-) TimerEvent: {}
+[7.018554] (-) TimerEvent: {}
+[7.118792] (-) TimerEvent: {}
+[7.219072] (-) TimerEvent: {}
+[7.319334] (-) TimerEvent: {}
+[7.419569] (-) TimerEvent: {}
+[7.519810] (-) TimerEvent: {}
+[7.620075] (-) TimerEvent: {}
+[7.720388] (-) TimerEvent: {}
+[7.820723] (-) TimerEvent: {}
+[7.920966] (-) TimerEvent: {}
+[8.021233] (-) TimerEvent: {}
+[8.121469] (-) TimerEvent: {}
+[8.221746] (-) TimerEvent: {}
+[8.322005] (-) TimerEvent: {}
+[8.422268] (-) TimerEvent: {}
+[8.522562] (-) TimerEvent: {}
+[8.622787] (-) TimerEvent: {}
+[8.723045] (-) TimerEvent: {}
+[8.823267] (-) TimerEvent: {}
+[8.923512] (-) TimerEvent: {}
+[9.023732] (-) TimerEvent: {}
+[9.123957] (-) TimerEvent: {}
+[9.224210] (-) TimerEvent: {}
+[9.324453] (-) TimerEvent: {}
+[9.424683] (-) TimerEvent: {}
+[9.524967] (-) TimerEvent: {}
+[9.625213] (-) TimerEvent: {}
+[9.725529] (-) TimerEvent: {}
+[9.825758] (-) TimerEvent: {}
+[9.925988] (-) TimerEvent: {}
+[10.026246] (-) TimerEvent: {}
+[10.126594] (-) TimerEvent: {}
+[10.226814] (-) TimerEvent: {}
+[10.327062] (-) TimerEvent: {}
+[10.427438] (-) TimerEvent: {}
+[10.527746] (-) TimerEvent: {}
+[10.628036] (-) TimerEvent: {}
+[10.728317] (-) TimerEvent: {}
+[10.828601] (-) TimerEvent: {}
+[10.928836] (-) TimerEvent: {}
+[11.029066] (-) TimerEvent: {}
+[11.129299] (-) TimerEvent: {}
+[11.229531] (-) TimerEvent: {}
+[11.329773] (-) TimerEvent: {}
+[11.430018] (-) TimerEvent: {}
+[11.530273] (-) TimerEvent: {}
+[11.630530] (-) TimerEvent: {}
+[11.730777] (-) TimerEvent: {}
+[11.831043] (-) TimerEvent: {}
+[11.931316] (-) TimerEvent: {}
+[12.031578] (-) TimerEvent: {}
+[12.131817] (-) TimerEvent: {}
+[12.232044] (-) TimerEvent: {}
+[12.332295] (-) TimerEvent: {}
+[12.432530] (-) TimerEvent: {}
+[12.532777] (-) TimerEvent: {}
+[12.600185] (serial_def_sdk) StdoutLine: {'line': b'[ 36%] \x1b[1m\x1b[32mLinking CXX executable uart\x1b[0m\n'}
+[12.632924] (-) TimerEvent: {}
+[12.733169] (-) TimerEvent: {}
+[12.833412] (-) TimerEvent: {}
+[12.933621] (-) TimerEvent: {}
+[13.033859] (-) TimerEvent: {}
+[13.134106] (-) TimerEvent: {}
+[13.234363] (-) TimerEvent: {}
+[13.334621] (-) TimerEvent: {}
+[13.360452] (serial_def_sdk) StdoutLine: {'line': b'[100%] Built target uart\n'}
+[13.366421] (serial_def_sdk) CommandEnded: {'returncode': 0}
+[13.367105] (serial_def_sdk) JobProgress: {'identifier': 'serial_def_sdk', 'progress': 'install'}
+[13.367421] (serial_def_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hjh/serial_new0122/build/serial_def_sdk'], 'cwd': '/home/hjh/serial_new0122/build/serial_def_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hjh'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hjh/serial_new0122/install/vision_msg/lib:/home/hjh/serial_new0122/install/def_msg/lib:/opt/ros/humble/opt/openvdb_vendor/lib:/home/hjh/ros2_ws/install/lib:/home/hjh/ros2_ws/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hjh'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/hjh/serial_new0122/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hjh'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hjh/miniconda3/condabin:/opt/ros/humble/bin:/home/hjh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hjh-Lenovo-G5000-IRH8:@/tmp/.ICE-unix/1753,unix/hjh-Lenovo-G5000-IRH8:/tmp/.ICE-unix/1753'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a95814f2_05a2_4d1f_8d89_1cd9fbc0086e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DY9QL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.150'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hjh/serial_new0122/install/serial_def_sdk:/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/hjh/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hjh/serial_new0122/build/serial_def_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hjh/miniconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=53c12b06493a34f64b5d3ccb69ade528'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hjh/serial_new0122/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/serial_new0122/install/def_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hjh/serial_new0122/install/vision_msg:/home/hjh/serial_new0122/install/def_msg:/home/hjh/serial_new0122/install/serial_def_sdk:/opt/ros/humble')]), 'shell': False}
+[13.371290] (serial_def_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.371518] (serial_def_sdk) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/serial_def_sdk/lib/serial_def_sdk/uart\n'}
+[13.379907] (serial_def_sdk) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hjh/serial_new0122/install/serial_def_sdk/lib/serial_def_sdk/uart" to ""\n'}
+[13.380245] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/lib/serial_def_sdk/talker\n'}
+[13.380542] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/launch\n'}
+[13.380718] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/launch/serial.launch.py\n'}
+[13.380835] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/ament_index/resource_index/package_run_dependencies/serial_def_sdk\n'}
+[13.380944] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/ament_index/resource_index/parent_prefix_path/serial_def_sdk\n'}
+[13.381052] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.sh\n'}
+[13.381159] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.dsv\n'}
+[13.381334] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/environment/path.sh\n'}
+[13.381530] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/environment/path.dsv\n'}
+[13.381875] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/local_setup.bash\n'}
+[13.382157] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/local_setup.sh\n'}
+[13.382293] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/local_setup.zsh\n'}
+[13.382406] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/local_setup.dsv\n'}
+[13.382515] (serial_def_sdk) StdoutLine: {'line': b'-- Installing: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/package.dsv\n'}
+[13.382639] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/ament_index/resource_index/packages/serial_def_sdk\n'}
+[13.382953] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig.cmake\n'}
+[13.383117] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig-version.cmake\n'}
+[13.383271] (serial_def_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/hjh/serial_new0122/install/serial_def_sdk/share/serial_def_sdk/package.xml\n'}
+[13.383810] (serial_def_sdk) CommandEnded: {'returncode': 0}
+[13.408163] (serial_def_sdk) JobEnded: {'identifier': 'serial_def_sdk', 'rc': 0}
+[13.409421] (-) EventReactorShutdown: {}

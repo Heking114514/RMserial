@@ -4,3 +4,14 @@ def_msg.egg-info/PKG-INFO
 def_msg.egg-info/SOURCES.txt
 def_msg.egg-info/dependency_links.txt
 def_msg.egg-info/top_level.txt
+def_msg/action/__init__.py
+def_msg/action/_nav_pose.py
+def_msg/msg/__init__.py
+def_msg/msg/_common_control.py
+def_msg/msg/_em_control.py
+def_msg/msg/_gimble_control.py
+def_msg/msg/_gimble_position.py
+def_msg/msg/_gobal_information.py
+def_msg/srv/__init__.py
+def_msg/srv/_controller_mode_set.py
+def_msg/srv/_heart_beat.py
