@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 # Utility rule file for ament_cmake_python_copy_vision_msg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_vision_msg.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_vision_msg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_vision_msg:
-	/usr/bin/cmake -E copy_directory /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg /home/hjh/serial_new0122/build/vision_msg/ament_cmake_python/vision_msg/vision_msg
+	/usr/bin/cmake -E copy_directory /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg /home/hjh/RMserial/build/vision_msg/ament_cmake_python/vision_msg/vision_msg
 
 CMakeFiles/ament_cmake_python_copy_vision_msg.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_copy_vision_msg.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ament_cmake_python_copy_vision_msg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_vision_msg.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_vision_msg.dir/depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg/CMakeFiles/ament_cmake_python_copy_vision_msg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg/CMakeFiles/ament_cmake_python_copy_vision_msg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_vision_msg.dir/depend
 

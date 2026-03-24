@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/vision_msg/CMakeFiles /home/hjh/serial_new0122/build/vision_msg/vision_msg__py//CMakeFiles/progress.marks
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/vision_msg/CMakeFiles 0
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/vision_msg/CMakeFiles /home/hjh/RMserial/build/vision_msg/vision_msg__py//CMakeFiles/progress.marks
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/RMserial/build/vision_msg/vision_msg__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/vision_msg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/clean
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/RMserial/build/vision_msg/vision_msg__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,31 +158,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/preinstall
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/RMserial/build/vision_msg/vision_msg__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/preinstall
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/RMserial/build/vision_msg/vision_msg__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-/home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
-.PHONY : /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
+/home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule:
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
+.PHONY : /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
 
 # Convenience name for target.
-vision_msg__py: /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
+vision_msg__py: /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/rule
 .PHONY : vision_msg__py
 
 # fast build rule for target.
 vision_msg__py/fast:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(MAKE) $(MAKESILENT) -f /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build.make /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build
+	cd /home/hjh/RMserial/build/vision_msg && $(MAKE) $(MAKESILENT) -f /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build.make /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build
 .PHONY : vision_msg__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

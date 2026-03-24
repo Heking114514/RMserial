@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/serial_def_sdk
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/serial_def_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/serial_def_sdk
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/serial_def_sdk
 
 # Include any dependencies generated for this target.
 include CMakeFiles/talker.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/talker.dir/codegen:
 .PHONY : CMakeFiles/talker.dir/codegen
 
 CMakeFiles/talker.dir/src/publisher.cpp.o: CMakeFiles/talker.dir/flags.make
-CMakeFiles/talker.dir/src/publisher.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp
+CMakeFiles/talker.dir/src/publisher.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp
 CMakeFiles/talker.dir/src/publisher.cpp.o: CMakeFiles/talker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/talker.dir/src/publisher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/talker.dir/src/publisher.cpp.o -MF CMakeFiles/talker.dir/src/publisher.cpp.o.d -o CMakeFiles/talker.dir/src/publisher.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/talker.dir/src/publisher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/talker.dir/src/publisher.cpp.o -MF CMakeFiles/talker.dir/src/publisher.cpp.o.d -o CMakeFiles/talker.dir/src/publisher.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp
 
 CMakeFiles/talker.dir/src/publisher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/publisher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp > CMakeFiles/talker.dir/src/publisher.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp > CMakeFiles/talker.dir/src/publisher.cpp.i
 
 CMakeFiles/talker.dir/src/publisher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/publisher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp -o CMakeFiles/talker.dir/src/publisher.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp -o CMakeFiles/talker.dir/src/publisher.cpp.s
 
 # Object files for target talker
 talker_OBJECTS = \
@@ -96,12 +96,12 @@ talker_EXTERNAL_OBJECTS =
 talker: CMakeFiles/talker.dir/src/publisher.cpp.o
 talker: CMakeFiles/talker.dir/build.make
 talker: /opt/ros/humble/lib/librclcpp.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_c.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_cpp.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_c.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_cpp.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_cpp.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_py.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_c.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_cpp.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_c.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_cpp.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_cpp.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_generator_py.so
 talker: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 talker: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 talker: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -151,8 +151,8 @@ talker: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp
 talker: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 talker: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 talker: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so
-talker: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_c.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so
+talker: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_generator_c.so
 talker: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
 talker: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 talker: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
@@ -190,7 +190,7 @@ talker: /opt/ros/humble/lib/librosidl_runtime_c.so
 talker: /opt/ros/humble/lib/librcutils.so
 talker: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 talker: CMakeFiles/talker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable talker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -202,6 +202,6 @@ CMakeFiles/talker.dir/clean:
 .PHONY : CMakeFiles/talker.dir/clean
 
 CMakeFiles/talker.dir/depend:
-	cd /home/hjh/serial_new0122/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/talker.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/talker.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/talker.dir/depend
 

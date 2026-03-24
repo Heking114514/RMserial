@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/serial_def_sdk
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/serial_def_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/serial_def_sdk
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/serial_def_sdk
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles /home/hjh/serial_new0122/build/serial_def_sdk//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles /home/hjh/RMserial/build/serial_def_sdk//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

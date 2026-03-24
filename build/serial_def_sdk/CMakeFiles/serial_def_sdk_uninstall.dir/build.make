@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/serial_def_sdk
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/serial_def_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/serial_def_sdk
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/serial_def_sdk
 
 # Utility rule file for serial_def_sdk_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/serial_def_sdk_uninstall.dir/compiler_depend.make
 include CMakeFiles/serial_def_sdk_uninstall.dir/progress.make
 
 CMakeFiles/serial_def_sdk_uninstall:
-	/usr/bin/cmake -P /home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/hjh/RMserial/build/serial_def_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/serial_def_sdk_uninstall.dir/codegen:
 .PHONY : CMakeFiles/serial_def_sdk_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/serial_def_sdk_uninstall.dir/clean:
 .PHONY : CMakeFiles/serial_def_sdk_uninstall.dir/clean
 
 CMakeFiles/serial_def_sdk_uninstall.dir/depend:
-	cd /home/hjh/serial_new0122/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/serial_def_sdk_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/serial_def_sdk_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/serial_def_sdk_uninstall.dir/depend
 

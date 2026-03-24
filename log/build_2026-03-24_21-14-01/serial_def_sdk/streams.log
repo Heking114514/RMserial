@@ -1,0 +1,50 @@
+[0.011s] Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[0.065s] [ 18%] Built target talker
+[0.074s] [ 27%] [32mBuilding CXX object CMakeFiles/uart.dir/src/base_controller.cpp.o[0m
+[1.771s] In file included from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./include/serial/base_controller.h:24[m[K,
+[1.772s]                  from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:1[m[K:
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:[m[K In constructor ‘[01m[KUartLinux::UartLinux(std::string, int, char, int, int)[m[K’:
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:22:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuart_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.772s]    17 |     UartLinux([01;35m[Kstring uart_name = "/dev/ttyUSB0"[m[K, int nSpeed = 115200, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.772s]       |               [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.772s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", [01;35m[Kint nSpeed = 115200[m[K, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.772s]       |                                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnEvent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.772s]    17 | tring uart_name = "/dev/ttyUSB0", int nSpeed = 115200, [01;35m[Kchar nEvent = 'N'[m[K, int nBits = 8, int nStop = 1) {}
+[1.772s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[1.772s] 
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnBits[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.772s]    17 | "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', [01;35m[Kint nBits = 8[m[K, int nStop = 1) {}
+[1.772s]       |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[1.772s] 
+[1.772s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnStop[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.772s]    17 |  int nSpeed = 115200, char nEvent = 'N', int nBits = 8, [01;35m[Kint nStop = 1[m[K) {}
+[1.772s]       |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[1.772s] 
+[12.382s] [ 36%] [1m[32mLinking CXX executable uart[0m
+[13.199s] [100%] Built target uart
+[13.206s] Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[13.208s] Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk
+[13.212s] -- Install configuration: ""
+[13.212s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/uart
+[13.218s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/uart" to ""
+[13.218s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/talker
+[13.218s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/launch
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/launch/serial.launch.py
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/package_run_dependencies/serial_def_sdk
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/parent_prefix_path/serial_def_sdk
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.sh
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.dsv
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/path.sh
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/path.dsv
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.bash
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.sh
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.zsh
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.dsv
+[13.219s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.dsv
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/packages/serial_def_sdk
+[13.219s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig.cmake
+[13.220s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig-version.cmake
+[13.220s] -- Up-to-date: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.xml
+[13.220s] Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk

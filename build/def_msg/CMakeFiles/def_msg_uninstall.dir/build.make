@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/def_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/def_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/def_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/def_msg
 
 # Utility rule file for def_msg_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/def_msg_uninstall.dir/compiler_depend.make
 include CMakeFiles/def_msg_uninstall.dir/progress.make
 
 CMakeFiles/def_msg_uninstall:
-	/usr/bin/cmake -P /home/hjh/serial_new0122/build/def_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/hjh/RMserial/build/def_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/def_msg_uninstall.dir/codegen:
 .PHONY : CMakeFiles/def_msg_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/def_msg_uninstall.dir/clean:
 .PHONY : CMakeFiles/def_msg_uninstall.dir/clean
 
 CMakeFiles/def_msg_uninstall.dir/depend:
-	cd /home/hjh/serial_new0122/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg/CMakeFiles/def_msg_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg/CMakeFiles/def_msg_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/def_msg_uninstall.dir/depend
 

@@ -1,8 +1,8 @@
 CMakeFiles/uart.dir/uart/uart_interface.cpp.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_interface.cpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/uart.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,8 +19,8 @@ CMakeFiles/uart.dir/uart/uart_interface.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.hpp \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -192,4 +192,4 @@ CMakeFiles/uart.dir/uart/uart_interface.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_hd.h
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h

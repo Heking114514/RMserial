@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp" "CMakeFiles/talker.dir/src/publisher.cpp.o" "gcc" "CMakeFiles/talker.dir/src/publisher.cpp.o.d"
+  "/home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp" "CMakeFiles/talker.dir/src/publisher.cpp.o" "gcc" "CMakeFiles/talker.dir/src/publisher.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

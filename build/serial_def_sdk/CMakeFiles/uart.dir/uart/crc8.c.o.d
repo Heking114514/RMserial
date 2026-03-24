@@ -1,7 +1,7 @@
 CMakeFiles/uart.dir/uart/crc8.c.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.c \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.c \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

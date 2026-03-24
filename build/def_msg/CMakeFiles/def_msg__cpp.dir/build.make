@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/def_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/def_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/def_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/def_msg
 
 # Utility rule file for def_msg__cpp.
 
@@ -168,8 +168,8 @@ rosidl_generator_cpp/def_msg/msg/gobal_information.hpp: /opt/ros/humble/share/ac
 rosidl_generator_cpp/def_msg/msg/gobal_information.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_cpp/def_msg/msg/gobal_information.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_cpp/def_msg/msg/gobal_information.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/hjh/serial_new0122/build/def_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/hjh/serial_new0122/build/def_msg/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/hjh/RMserial/build/def_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/hjh/RMserial/build/def_msg/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/def_msg/msg/detail/gobal_information__builder.hpp: rosidl_generator_cpp/def_msg/msg/gobal_information.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/def_msg/msg/detail/gobal_information__builder.hpp
@@ -344,6 +344,6 @@ CMakeFiles/def_msg__cpp.dir/clean:
 .PHONY : CMakeFiles/def_msg__cpp.dir/clean
 
 CMakeFiles/def_msg__cpp.dir/depend:
-	cd /home/hjh/serial_new0122/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg/CMakeFiles/def_msg__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg/CMakeFiles/def_msg__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/def_msg__cpp.dir/depend
 

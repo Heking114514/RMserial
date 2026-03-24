@@ -1,0 +1,290 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7bc6efe6ae30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7bc6efe6a980>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7bc6efe6a980>>, mixin_verb=('build',))
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.187s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hjh/RMserial'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(serial/def_msg) by extension 'ros'
+[0.198s] DEBUG:colcon.colcon_core.package_identification:Package 'serial/def_msg' with type 'ros.ament_cmake' and name 'def_msg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(serial/serial_def_sdk) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'serial/serial_def_sdk' with type 'ros.ament_cmake' and name 'serial_def_sdk'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(serial/vision_msg) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'serial/vision_msg' with type 'ros.ament_cmake' and name 'vision_msg'
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.222s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 483 installed packages in /opt/ros/humble
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_args' from command line to 'None'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_target' from command line to 'None'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.257s] Level 5:colcon.colcon_core.verb:set package 'def_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.257s] DEBUG:colcon.colcon_core.verb:Building package 'def_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hjh/RMserial/build/def_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hjh/RMserial/install/def_msg', 'merge_install': False, 'path': '/home/hjh/RMserial/serial/def_msg', 'symlink_install': False, 'test_result_base': None}
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_target' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.258s] DEBUG:colcon.colcon_core.verb:Building package 'vision_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hjh/RMserial/build/vision_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hjh/RMserial/install/vision_msg', 'merge_install': False, 'path': '/home/hjh/RMserial/serial/vision_msg', 'symlink_install': False, 'test_result_base': None}
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_target' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'serial_def_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.258s] DEBUG:colcon.colcon_core.verb:Building package 'serial_def_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hjh/RMserial/build/serial_def_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hjh/RMserial/install/serial_def_sdk', 'merge_install': False, 'path': '/home/hjh/RMserial/serial/serial_def_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.258s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.259s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hjh/RMserial/serial/def_msg' with build type 'ament_cmake'
+[0.260s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hjh/RMserial/serial/def_msg'
+[0.261s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.261s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.261s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.264s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hjh/RMserial/serial/vision_msg' with build type 'ament_cmake'
+[0.265s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hjh/RMserial/serial/vision_msg'
+[0.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/def_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/def_msg
+[0.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/vision_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/vision_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/vision_msg
+[2.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/vision_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/vision_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/vision_msg
+[2.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/vision_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/vision_msg -- -j16 -l16
+[2.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/def_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/def_msg
+[2.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/def_msg -- -j16 -l16
+[4.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/vision_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/vision_msg -- -j16 -l16
+[4.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/vision_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/vision_msg
+[4.960s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msg)
+[4.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/vision_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/vision_msg
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg' for CMake module files
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg' for CMake config files
+[4.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msg', 'cmake_prefix_path')
+[4.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.ps1'
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.dsv'
+[4.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.sh'
+[4.968s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib'
+[4.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msg', 'ld_library_path_lib')
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.ps1'
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.dsv'
+[4.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.sh'
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/bin'
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib/pkgconfig/vision_msg.pc'
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib/python3.10/site-packages'
+[4.971s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/bin'
+[4.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.ps1'
+[4.972s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.dsv'
+[4.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.sh'
+[4.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.bash'
+[4.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.zsh'
+[4.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/vision_msg/share/colcon-core/packages/vision_msg)
+[4.978s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msg)
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg' for CMake module files
+[4.979s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg' for CMake config files
+[4.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msg', 'cmake_prefix_path')
+[4.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.ps1'
+[4.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.dsv'
+[4.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/cmake_prefix_path.sh'
+[4.981s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib'
+[4.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msg', 'ld_library_path_lib')
+[4.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.ps1'
+[4.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.dsv'
+[4.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/vision_msg/share/vision_msg/hook/ld_library_path_lib.sh'
+[4.983s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/bin'
+[4.983s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib/pkgconfig/vision_msg.pc'
+[4.984s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/lib/python3.10/site-packages'
+[4.984s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/vision_msg/bin'
+[4.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.ps1'
+[4.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.dsv'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.sh'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.bash'
+[4.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/vision_msg/share/vision_msg/package.zsh'
+[4.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/vision_msg/share/colcon-core/packages/vision_msg)
+[6.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/def_msg -- -j16 -l16
+[6.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/def_msg
+[6.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(def_msg)
+[6.724s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg' for CMake module files
+[6.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/def_msg
+[6.725s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg' for CMake config files
+[6.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('def_msg', 'cmake_prefix_path')
+[6.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.ps1'
+[6.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.dsv'
+[6.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.sh'
+[6.726s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib'
+[6.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('def_msg', 'ld_library_path_lib')
+[6.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.ps1'
+[6.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.dsv'
+[6.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.sh'
+[6.727s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/bin'
+[6.727s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib/pkgconfig/def_msg.pc'
+[6.727s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib/python3.10/site-packages'
+[6.727s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/bin'
+[6.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.ps1'
+[6.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/package.dsv'
+[6.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.sh'
+[6.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.bash'
+[6.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.zsh'
+[6.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/def_msg/share/colcon-core/packages/def_msg)
+[6.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(def_msg)
+[6.729s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg' for CMake module files
+[6.730s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg' for CMake config files
+[6.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('def_msg', 'cmake_prefix_path')
+[6.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.ps1'
+[6.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.dsv'
+[6.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/cmake_prefix_path.sh'
+[6.731s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib'
+[6.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('def_msg', 'ld_library_path_lib')
+[6.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.ps1'
+[6.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.dsv'
+[6.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/def_msg/share/def_msg/hook/ld_library_path_lib.sh'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/bin'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib/pkgconfig/def_msg.pc'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/lib/python3.10/site-packages'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/def_msg/bin'
+[6.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.ps1'
+[6.733s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/def_msg/share/def_msg/package.dsv'
+[6.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.sh'
+[6.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.bash'
+[6.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/def_msg/share/def_msg/package.zsh'
+[6.733s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/def_msg/share/colcon-core/packages/def_msg)
+[6.734s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hjh/RMserial/serial/serial_def_sdk' with build type 'ament_cmake'
+[6.734s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hjh/RMserial/serial/serial_def_sdk'
+[6.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hjh/RMserial/serial/serial_def_sdk -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/serial_def_sdk
+[8.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hjh/RMserial/serial/serial_def_sdk -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/serial_def_sdk
+[8.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[21.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[21.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk
+[21.613s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_def_sdk)
+[21.613s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk' for CMake module files
+[21.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk
+[21.614s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk' for CMake config files
+[21.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_def_sdk', 'cmake_prefix_path')
+[21.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.ps1'
+[21.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.dsv'
+[21.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.sh'
+[21.616s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib'
+[21.616s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/bin'
+[21.616s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib/pkgconfig/serial_def_sdk.pc'
+[21.616s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib/python3.10/site-packages'
+[21.616s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/bin'
+[21.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.ps1'
+[21.617s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.dsv'
+[21.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.sh'
+[21.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.bash'
+[21.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.zsh'
+[21.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/serial_def_sdk/share/colcon-core/packages/serial_def_sdk)
+[21.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_def_sdk)
+[21.619s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk' for CMake module files
+[21.619s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk' for CMake config files
+[21.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_def_sdk', 'cmake_prefix_path')
+[21.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.ps1'
+[21.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.dsv'
+[21.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/hook/cmake_prefix_path.sh'
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib'
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/bin'
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib/pkgconfig/serial_def_sdk.pc'
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/lib/python3.10/site-packages'
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/hjh/RMserial/install/serial_def_sdk/bin'
+[21.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.ps1'
+[21.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.dsv'
+[21.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.sh'
+[21.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.bash'
+[21.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.zsh'
+[21.623s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hjh/RMserial/install/serial_def_sdk/share/colcon-core/packages/serial_def_sdk)
+[21.623s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.624s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.624s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.624s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.630s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.630s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.630s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.650s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.650s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hjh/RMserial/install/local_setup.ps1'
+[21.652s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hjh/RMserial/install/_local_setup_util_ps1.py'
+[21.654s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hjh/RMserial/install/setup.ps1'
+[21.655s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hjh/RMserial/install/local_setup.sh'
+[21.656s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hjh/RMserial/install/_local_setup_util_sh.py'
+[21.657s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hjh/RMserial/install/setup.sh'
+[21.659s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hjh/RMserial/install/local_setup.bash'
+[21.659s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hjh/RMserial/install/setup.bash'
+[21.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hjh/RMserial/install/local_setup.zsh'
+[21.661s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hjh/RMserial/install/setup.zsh'

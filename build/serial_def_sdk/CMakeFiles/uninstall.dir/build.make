@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/serial_def_sdk
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/serial_def_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/serial_def_sdk
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/serial_def_sdk
 
 # Utility rule file for uninstall.
 
@@ -81,6 +81,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/hjh/serial_new0122/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

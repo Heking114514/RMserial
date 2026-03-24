@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/vision_msg/CMakeFiles /home/hjh/serial_new0122/build/vision_msg//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/vision_msg/CMakeFiles /home/hjh/RMserial/build/vision_msg//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/serial_new0122/build/vision_msg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjh/RMserial/build/vision_msg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -402,7 +402,7 @@ vision_msg__py: cmake_check_build_system
 
 # fast build rule for target.
 vision_msg__py/fast:
-	$(MAKE) $(MAKESILENT) -f /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build.make /home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build
+	$(MAKE) $(MAKESILENT) -f /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build.make /home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/build
 .PHONY : vision_msg__py/fast
 
 rosidl_generator_c/vision_msg/msg/detail/detected_id__functions.o: rosidl_generator_c/vision_msg/msg/detail/detected_id__functions.c.o

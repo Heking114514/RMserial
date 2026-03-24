@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/hjh/serial_new0122/build/def_msg/cmake_install.cmake",
-		"/home/hjh/serial_new0122/build/def_msg/def_msg__py/cmake_install.cmake"
+		"/home/hjh/RMserial/build/def_msg/cmake_install.cmake",
+		"/home/hjh/RMserial/build/def_msg/def_msg__py/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

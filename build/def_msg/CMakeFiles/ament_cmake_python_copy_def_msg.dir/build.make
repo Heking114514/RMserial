@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/def_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/def_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/def_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/def_msg
 
 # Utility rule file for ament_cmake_python_copy_def_msg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_def_msg.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_def_msg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_def_msg:
-	/usr/bin/cmake -E copy_directory /home/hjh/serial_new0122/build/def_msg/rosidl_generator_py/def_msg /home/hjh/serial_new0122/build/def_msg/ament_cmake_python/def_msg/def_msg
+	/usr/bin/cmake -E copy_directory /home/hjh/RMserial/build/def_msg/rosidl_generator_py/def_msg /home/hjh/RMserial/build/def_msg/ament_cmake_python/def_msg/def_msg
 
 CMakeFiles/ament_cmake_python_copy_def_msg.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_copy_def_msg.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ament_cmake_python_copy_def_msg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_def_msg.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_def_msg.dir/depend:
-	cd /home/hjh/serial_new0122/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg/CMakeFiles/ament_cmake_python_copy_def_msg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg/CMakeFiles/ament_cmake_python_copy_def_msg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_def_msg.dir/depend
 

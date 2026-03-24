@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_vision_msg -DROS_PACKAGE_NAME=\"vision_msg\"
 
-C_INCLUDES = -I/home/hjh/serial_new0122/build/vision_msg/rosidl_generator_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/hjh/RMserial/build/vision_msg/rosidl_generator_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -std=gnu11 -fPIC -Wall
 

@@ -1,0 +1,35 @@
+In file included from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./include/serial/base_controller.h:24[m[K,
+                 from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:1[m[K:
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:[m[K In constructor ‘[01m[KUartLinux::UartLinux(std::string, int, char, int, int)[m[K’:
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:22:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuart_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 |     UartLinux([01;35m[Kstring uart_name = "/dev/ttyUSB0"[m[K, int nSpeed = 115200, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+      |               [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 |     UartLinux(string uart_name = "/dev/ttyUSB0", [01;35m[Kint nSpeed = 115200[m[K, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+      |                                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnEvent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | tring uart_name = "/dev/ttyUSB0", int nSpeed = 115200, [01;35m[Kchar nEvent = 'N'[m[K, int nBits = 8, int nStop = 1) {}
+      |                                                        [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnBits[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', [01;35m[Kint nBits = 8[m[K, int nStop = 1) {}
+      |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnStop[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 |  int nSpeed = 115200, char nEvent = 'N', int nBits = 8, [01;35m[Kint nStop = 1[m[K) {}
+      |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:[m[K In member function ‘[01m[Kvoid BaseController::serial2global()[m[K’:
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:202:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstatus[m[K’
+  202 |     status.arm = additional_data.arm;58
+      |                                        [01;31m[K^[m[K
+      |                                        [32m[K;[m[K
+......
+  205 |     [32m[Kstatus[m[K.stage_remain_time = game_status_data.stage_remain_time;
+      |     [32m[K~~~~~~[m[K                              
+[01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:202:38:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  202 |     status.arm = additional_data.arm;[01;35m[K58[m[K
+      |                                      [01;35m[K^~[m[K
+gmake[2]: *** [CMakeFiles/uart.dir/build.make:79：CMakeFiles/uart.dir/src/base_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:156：CMakeFiles/uart.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

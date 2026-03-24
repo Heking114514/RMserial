@@ -1,7 +1,7 @@
 CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.cpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -171,7 +171,7 @@ CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_hd.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -190,6 +190,6 @@ CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/uart.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h

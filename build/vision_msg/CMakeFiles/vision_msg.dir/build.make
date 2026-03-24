@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 # Utility rule file for vision_msg.
 
@@ -66,9 +66,9 @@ include CMakeFiles/vision_msg.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/vision_msg.dir/progress.make
 
-CMakeFiles/vision_msg: /home/hjh/serial_new0122/serial/vision_msg/msg/GimblePosition.msg
-CMakeFiles/vision_msg: /home/hjh/serial_new0122/serial/vision_msg/msg/DetectedId.msg
-CMakeFiles/vision_msg: /home/hjh/serial_new0122/serial/vision_msg/msg/SelectedId.msg
+CMakeFiles/vision_msg: /home/hjh/RMserial/serial/vision_msg/msg/GimblePosition.msg
+CMakeFiles/vision_msg: /home/hjh/RMserial/serial/vision_msg/msg/DetectedId.msg
+CMakeFiles/vision_msg: /home/hjh/RMserial/serial/vision_msg/msg/SelectedId.msg
 CMakeFiles/vision_msg: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/vision_msg: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/vision_msg: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -118,6 +118,6 @@ CMakeFiles/vision_msg.dir/clean:
 .PHONY : CMakeFiles/vision_msg.dir/clean
 
 CMakeFiles/vision_msg.dir/depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg/CMakeFiles/vision_msg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg/CMakeFiles/vision_msg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vision_msg.dir/depend
 

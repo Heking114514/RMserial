@@ -14,19 +14,17 @@ extern const uint8_t extra_len;
 // ======================== 消息ID定义 ========================================
 enum msg_id {
     heartbeat   = 0x01,
-    fix_control = 0x05,
-
+    gimbal= 0x02,
     control     = 0x03,
     additional  = 0x04,
-    gimbal      = 0x02,
-
+    fix_control = 0x05,
     imu2        = 0x06,
     yaw         = 0x07,
     game_status = 0x08,
+    chassis     = 0x10,
     
-    // --- 新增：组合控制消息 (FixControl) ---
-    chassis = 0x10 
-
+    // --- 新增：哨兵状态组合包 (电控发给上位机) ---
+    sentry_state = 0x20 
 };
 
 // ========================== 数据结构体定义 ===================================
@@ -106,6 +104,22 @@ typedef struct {
     float spin;
 } FixControlData;
 
+typedef struct {
+    // 1. 云台数据 (9 bytes: 4+4+1)
+    float yaw;
+    float pitch;
+    uint8_t fire; 
+    
+    // 2. 心跳数据 (7 bytes: 2+1+1+1+1+1)
+    // uint16_t timestamp;
+    float battery;
+    float life;
+    float color;
+    float bullet;
+    float fault_flag;
+} SentryState;
+
+
 // ======================== 全局变量声明 (保持兼容性) ========================
 extern HeartBeatReceive heartbeat_send; // 注意：命名虽然叫send，但原代码逻辑似乎是用作接收的buffer，暂时保留原样
 extern HeartBeatSend heartbeat_receive;
@@ -121,7 +135,7 @@ extern ext_game_status_t game_status_data;
 
 // 新增全局变量
 extern FixControlData fix_control_send;
-
+extern SentryState sentry_state_receive;
 #ifdef __cplusplus
 }
 #endif

@@ -1,8 +1,8 @@
 CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.cpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.cpp \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.hpp \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -166,7 +166,7 @@ CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
@@ -184,5 +184,5 @@ CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc16.h
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/crc16.h

@@ -20,11 +20,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
   "rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
   "vision_msg__py/CMakeLists.txt"
-  "/home/hjh/serial_new0122/serial/vision_msg/CMakeLists.txt"
-  "/home/hjh/serial_new0122/serial/vision_msg/msg/DetectedId.msg"
-  "/home/hjh/serial_new0122/serial/vision_msg/msg/GimblePosition.msg"
-  "/home/hjh/serial_new0122/serial/vision_msg/msg/SelectedId.msg"
-  "/home/hjh/serial_new0122/serial/vision_msg/package.xml"
+  "/home/hjh/RMserial/serial/vision_msg/CMakeLists.txt"
+  "/home/hjh/RMserial/serial/vision_msg/msg/DetectedId.msg"
+  "/home/hjh/RMserial/serial/vision_msg/msg/GimblePosition.msg"
+  "/home/hjh/RMserial/serial/vision_msg/msg/SelectedId.msg"
+  "/home/hjh/RMserial/serial/vision_msg/package.xml"
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-config-version.cmake"
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-config.cmake"
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-dynamic-targets-none.cmake"
@@ -625,7 +625,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision_msg"
   "ament_cmake_index/share/ament_index/resource_index/packages/vision_msg"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "/home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -647,5 +647,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/vision_msg__rosidl_typesupport_fastrtps_c__pyext.dir/DependInfo.cmake"
   "CMakeFiles/vision_msg__rosidl_typesupport_introspection_c__pyext.dir/DependInfo.cmake"
   "CMakeFiles/vision_msg__rosidl_typesupport_c__pyext.dir/DependInfo.cmake"
-  "/home/hjh/serial_new0122/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/DependInfo.cmake"
+  "/home/hjh/RMserial/build/vision_msg/vision_msg__py/CMakeFiles/vision_msg__py.dir/DependInfo.cmake"
   )

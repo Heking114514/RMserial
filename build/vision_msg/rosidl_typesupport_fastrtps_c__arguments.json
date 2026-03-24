@@ -1,11 +1,11 @@
 {
   "package_name": "vision_msg",
-  "output_dir": "/home/hjh/serial_new0122/build/vision_msg/rosidl_typesupport_fastrtps_c/vision_msg",
+  "output_dir": "/home/hjh/RMserial/build/vision_msg/rosidl_typesupport_fastrtps_c/vision_msg",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg:msg/GimblePosition.idl",
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg:msg/DetectedId.idl",
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg:msg/SelectedId.idl"
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg:msg/GimblePosition.idl",
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg:msg/DetectedId.idl",
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg:msg/SelectedId.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -50,9 +50,9 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg/msg/GimblePosition.idl",
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg/msg/DetectedId.idl",
-    "/home/hjh/serial_new0122/build/vision_msg/rosidl_adapter/vision_msg/msg/SelectedId.idl",
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg/msg/GimblePosition.idl",
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg/msg/DetectedId.idl",
+    "/home/hjh/RMserial/build/vision_msg/rosidl_adapter/vision_msg/msg/SelectedId.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

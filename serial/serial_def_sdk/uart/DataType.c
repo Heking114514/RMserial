@@ -21,3 +21,4 @@ ext_game_status_t game_status_data = {0};
 
 // 新增实例化
 FixControlData fix_control_send = {0};
+SentryState sentry_state_receive = {0}; 

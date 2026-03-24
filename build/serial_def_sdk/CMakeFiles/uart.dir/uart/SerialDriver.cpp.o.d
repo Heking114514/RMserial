@@ -1,7 +1,7 @@
 CMakeFiles/uart.dir/uart/SerialDriver.cpp.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.cpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.cpp \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.hpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

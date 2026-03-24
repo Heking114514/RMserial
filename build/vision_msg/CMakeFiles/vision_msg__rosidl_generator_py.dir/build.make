@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/vision_msg__rosidl_generator_py.dir/depend.make
@@ -75,44 +75,44 @@ CMakeFiles/vision_msg__rosidl_generator_py.dir/codegen:
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/flags.make
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o: rosidl_generator_py/vision_msg/msg/_gimble_position_s.c
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o -c /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.o -c /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.i
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_gimble_position_s.c.s
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/flags.make
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o: rosidl_generator_py/vision_msg/msg/_detected_id_s.c
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o -c /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.o -c /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.i
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_detected_id_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_detected_id_s.c.s
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/flags.make
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o: rosidl_generator_py/vision_msg/msg/_selected_id_s.c
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o: CMakeFiles/vision_msg__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o -c /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o -MF CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o.d -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.o -c /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c > CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.i
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/build/vision_msg/rosidl_generator_py/vision_msg/msg/_selected_id_s.c -o CMakeFiles/vision_msg__rosidl_generator_py.dir/rosidl_generator_py/vision_msg/msg/_selected_id_s.c.s
 
 # Object files for target vision_msg__rosidl_generator_py
 vision_msg__rosidl_generator_py_OBJECTS = \
@@ -140,7 +140,7 @@ rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so: /opt/ros/h
 rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so: CMakeFiles/vision_msg__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/serial_new0122/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/RMserial/build/vision_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library rosidl_generator_py/vision_msg/libvision_msg__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vision_msg__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +152,6 @@ CMakeFiles/vision_msg__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/vision_msg__rosidl_generator_py.dir/clean
 
 CMakeFiles/vision_msg__rosidl_generator_py.dir/depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg/CMakeFiles/vision_msg__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg/CMakeFiles/vision_msg__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vision_msg__rosidl_generator_py.dir/depend
 

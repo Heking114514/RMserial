@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/serial_def_sdk
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/serial_def_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/serial_def_sdk
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/serial_def_sdk
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uart.dir/depend.make
@@ -73,116 +73,116 @@ CMakeFiles/uart.dir/codegen:
 .PHONY : CMakeFiles/uart.dir/codegen
 
 CMakeFiles/uart.dir/src/base_controller.cpp.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/src/base_controller.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/src/base_controller.cpp
+CMakeFiles/uart.dir/src/base_controller.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp
 CMakeFiles/uart.dir/src/base_controller.cpp.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uart.dir/src/base_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/src/base_controller.cpp.o -MF CMakeFiles/uart.dir/src/base_controller.cpp.o.d -o CMakeFiles/uart.dir/src/base_controller.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/src/base_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uart.dir/src/base_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/src/base_controller.cpp.o -MF CMakeFiles/uart.dir/src/base_controller.cpp.o.d -o CMakeFiles/uart.dir/src/base_controller.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp
 
 CMakeFiles/uart.dir/src/base_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uart.dir/src/base_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/src/base_controller.cpp > CMakeFiles/uart.dir/src/base_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp > CMakeFiles/uart.dir/src/base_controller.cpp.i
 
 CMakeFiles/uart.dir/src/base_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uart.dir/src/base_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/src/base_controller.cpp -o CMakeFiles/uart.dir/src/base_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp -o CMakeFiles/uart.dir/src/base_controller.cpp.s
 
 CMakeFiles/uart.dir/uart/SerialDriver.cpp.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/SerialDriver.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.cpp
+CMakeFiles/uart.dir/uart/SerialDriver.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.cpp
 CMakeFiles/uart.dir/uart/SerialDriver.cpp.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uart.dir/uart/SerialDriver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/SerialDriver.cpp.o -MF CMakeFiles/uart.dir/uart/SerialDriver.cpp.o.d -o CMakeFiles/uart.dir/uart/SerialDriver.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uart.dir/uart/SerialDriver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/SerialDriver.cpp.o -MF CMakeFiles/uart.dir/uart/SerialDriver.cpp.o.d -o CMakeFiles/uart.dir/uart/SerialDriver.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.cpp
 
 CMakeFiles/uart.dir/uart/SerialDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uart.dir/uart/SerialDriver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.cpp > CMakeFiles/uart.dir/uart/SerialDriver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.cpp > CMakeFiles/uart.dir/uart/SerialDriver.cpp.i
 
 CMakeFiles/uart.dir/uart/SerialDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uart.dir/uart/SerialDriver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SerialDriver.cpp -o CMakeFiles/uart.dir/uart/SerialDriver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/SerialDriver.cpp -o CMakeFiles/uart.dir/uart/SerialDriver.cpp.s
 
 CMakeFiles/uart.dir/uart/uart_interface.cpp.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/uart_interface.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_interface.cpp
+CMakeFiles/uart.dir/uart/uart_interface.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp
 CMakeFiles/uart.dir/uart/uart_interface.cpp.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uart.dir/uart/uart_interface.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/uart_interface.cpp.o -MF CMakeFiles/uart.dir/uart/uart_interface.cpp.o.d -o CMakeFiles/uart.dir/uart/uart_interface.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uart.dir/uart/uart_interface.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/uart_interface.cpp.o -MF CMakeFiles/uart.dir/uart/uart_interface.cpp.o.d -o CMakeFiles/uart.dir/uart/uart_interface.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp
 
 CMakeFiles/uart.dir/uart/uart_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uart.dir/uart/uart_interface.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_interface.cpp > CMakeFiles/uart.dir/uart/uart_interface.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp > CMakeFiles/uart.dir/uart/uart_interface.cpp.i
 
 CMakeFiles/uart.dir/uart/uart_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uart.dir/uart/uart_interface.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/uart_interface.cpp -o CMakeFiles/uart.dir/uart/uart_interface.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp -o CMakeFiles/uart.dir/uart/uart_interface.cpp.s
 
 CMakeFiles/uart.dir/uart/DataType.c.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/DataType.c.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.c
+CMakeFiles/uart.dir/uart/DataType.c.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.c
 CMakeFiles/uart.dir/uart/DataType.c.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uart.dir/uart/DataType.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/DataType.c.o -MF CMakeFiles/uart.dir/uart/DataType.c.o.d -o CMakeFiles/uart.dir/uart/DataType.c.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uart.dir/uart/DataType.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/DataType.c.o -MF CMakeFiles/uart.dir/uart/DataType.c.o.d -o CMakeFiles/uart.dir/uart/DataType.c.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.c
 
 CMakeFiles/uart.dir/uart/DataType.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uart.dir/uart/DataType.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.c > CMakeFiles/uart.dir/uart/DataType.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.c > CMakeFiles/uart.dir/uart/DataType.c.i
 
 CMakeFiles/uart.dir/uart/DataType.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uart.dir/uart/DataType.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.c -o CMakeFiles/uart.dir/uart/DataType.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.c -o CMakeFiles/uart.dir/uart/DataType.c.s
 
 CMakeFiles/uart.dir/uart/crc8.c.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/crc8.c.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.c
+CMakeFiles/uart.dir/uart/crc8.c.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.c
 CMakeFiles/uart.dir/uart/crc8.c.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uart.dir/uart/crc8.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/crc8.c.o -MF CMakeFiles/uart.dir/uart/crc8.c.o.d -o CMakeFiles/uart.dir/uart/crc8.c.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uart.dir/uart/crc8.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/crc8.c.o -MF CMakeFiles/uart.dir/uart/crc8.c.o.d -o CMakeFiles/uart.dir/uart/crc8.c.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.c
 
 CMakeFiles/uart.dir/uart/crc8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uart.dir/uart/crc8.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.c > CMakeFiles/uart.dir/uart/crc8.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.c > CMakeFiles/uart.dir/uart/crc8.c.i
 
 CMakeFiles/uart.dir/uart/crc8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uart.dir/uart/crc8.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc8.c -o CMakeFiles/uart.dir/uart/crc8.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/crc8.c -o CMakeFiles/uart.dir/uart/crc8.c.s
 
 CMakeFiles/uart.dir/uart/crc16.c.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/crc16.c.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc16.c
+CMakeFiles/uart.dir/uart/crc16.c.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/crc16.c
 CMakeFiles/uart.dir/uart/crc16.c.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uart.dir/uart/crc16.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/crc16.c.o -MF CMakeFiles/uart.dir/uart/crc16.c.o.d -o CMakeFiles/uart.dir/uart/crc16.c.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc16.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uart.dir/uart/crc16.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/crc16.c.o -MF CMakeFiles/uart.dir/uart/crc16.c.o.d -o CMakeFiles/uart.dir/uart/crc16.c.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/crc16.c
 
 CMakeFiles/uart.dir/uart/crc16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uart.dir/uart/crc16.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc16.c > CMakeFiles/uart.dir/uart/crc16.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/crc16.c > CMakeFiles/uart.dir/uart/crc16.c.i
 
 CMakeFiles/uart.dir/uart/crc16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uart.dir/uart/crc16.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/crc16.c -o CMakeFiles/uart.dir/uart/crc16.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/crc16.c -o CMakeFiles/uart.dir/uart/crc16.c.s
 
 CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.cpp
+CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.cpp
 CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o -MF CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o.d -o CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o -MF CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o.d -o CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.cpp
 
 CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.cpp > CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.cpp > CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.i
 
 CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/SeaskyProtocol.cpp -o CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/SeaskyProtocol.cpp -o CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.s
 
 CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: CMakeFiles/uart.dir/flags.make
-CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.cpp
+CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp
 CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o: CMakeFiles/uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o -MF CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o.d -o CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o -c /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o -MF CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o.d -o CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o -c /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp
 
 CMakeFiles/uart.dir/uart/seasky_communicator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uart.dir/uart/seasky_communicator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.cpp > CMakeFiles/uart.dir/uart/seasky_communicator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp > CMakeFiles/uart.dir/uart/seasky_communicator.cpp.i
 
 CMakeFiles/uart.dir/uart/seasky_communicator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uart.dir/uart/seasky_communicator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/serial_new0122/serial/serial_def_sdk/uart/seasky_communicator.cpp -o CMakeFiles/uart.dir/uart/seasky_communicator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp -o CMakeFiles/uart.dir/uart/seasky_communicator.cpp.s
 
 # Object files for target uart
 uart_OBJECTS = \
@@ -207,18 +207,18 @@ uart: CMakeFiles/uart.dir/uart/crc16.c.o
 uart: CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o
 uart: CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o
 uart: CMakeFiles/uart.dir/build.make
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_c.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_cpp.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_c.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_cpp.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_cpp.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_py.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_c.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_c.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_cpp.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_cpp.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_cpp.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_generator_py.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_c.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_fastrtps_cpp.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_c.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_introspection_cpp.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_cpp.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_generator_py.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_c.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_c.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_cpp.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_cpp.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_cpp.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_generator_py.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
@@ -237,10 +237,10 @@ uart: /opt/ros/humble/lib/libexample_interfaces__rosidl_typesupport_fastrtps_cpp
 uart: /opt/ros/humble/lib/libexample_interfaces__rosidl_typesupport_introspection_cpp.so
 uart: /opt/ros/humble/lib/libexample_interfaces__rosidl_typesupport_cpp.so
 uart: /opt/ros/humble/lib/libexample_interfaces__rosidl_generator_py.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so
-uart: /home/hjh/serial_new0122/install/def_msg/lib/libdef_msg__rosidl_generator_c.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_typesupport_c.so
-uart: /home/hjh/serial_new0122/install/vision_msg/lib/libvision_msg__rosidl_generator_c.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so
+uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_generator_c.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_c.so
+uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_generator_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 uart: /opt/ros/humble/lib/libtf2_ros.so
@@ -348,7 +348,7 @@ uart: /opt/ros/humble/lib/librcpputils.so
 uart: /opt/ros/humble/lib/librosidl_runtime_c.so
 uart: /opt/ros/humble/lib/librcutils.so
 uart: CMakeFiles/uart.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable uart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable uart"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uart.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -360,6 +360,6 @@ CMakeFiles/uart.dir/clean:
 .PHONY : CMakeFiles/uart.dir/clean
 
 CMakeFiles/uart.dir/depend:
-	cd /home/hjh/serial_new0122/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/serial/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk /home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/uart.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/serial_def_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/serial/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk /home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/uart.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uart.dir/depend
 

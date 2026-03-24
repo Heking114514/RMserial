@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/def_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/def_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/def_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/def_msg
 
 # Utility rule file for def_msg.
 
@@ -66,18 +66,18 @@ include CMakeFiles/def_msg.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/def_msg.dir/progress.make
 
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/msg/GobalInformation.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/msg/GimbleControl.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/msg/CommonControl.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/msg/EmControl.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/msg/GimblePosition.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/srv/ControllerModeSet.srv
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/msg/GobalInformation.msg
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/msg/GimbleControl.msg
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/msg/CommonControl.msg
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/msg/EmControl.msg
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/msg/GimblePosition.msg
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/srv/ControllerModeSet.srv
 CMakeFiles/def_msg: rosidl_cmake/srv/ControllerModeSet_Request.msg
 CMakeFiles/def_msg: rosidl_cmake/srv/ControllerModeSet_Response.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/srv/HeartBeat.srv
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/srv/HeartBeat.srv
 CMakeFiles/def_msg: rosidl_cmake/srv/HeartBeat_Request.msg
 CMakeFiles/def_msg: rosidl_cmake/srv/HeartBeat_Response.msg
-CMakeFiles/def_msg: /home/hjh/serial_new0122/serial/def_msg/action/NavPose.action
+CMakeFiles/def_msg: /home/hjh/RMserial/serial/def_msg/action/NavPose.action
 CMakeFiles/def_msg: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/def_msg: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/def_msg: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -129,6 +129,6 @@ CMakeFiles/def_msg.dir/clean:
 .PHONY : CMakeFiles/def_msg.dir/clean
 
 CMakeFiles/def_msg.dir/depend:
-	cd /home/hjh/serial_new0122/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/serial/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg /home/hjh/serial_new0122/build/def_msg/CMakeFiles/def_msg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/def_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/serial/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg /home/hjh/RMserial/build/def_msg/CMakeFiles/def_msg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/def_msg.dir/depend
 

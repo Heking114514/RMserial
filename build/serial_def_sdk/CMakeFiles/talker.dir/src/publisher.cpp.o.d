@@ -1,5 +1,5 @@
 CMakeFiles/talker.dir/src/publisher.cpp.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/src/publisher.cpp \
+ /home/hjh/RMserial/serial/serial_def_sdk/src/publisher.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
@@ -626,16 +626,16 @@ CMakeFiles/talker.dir/src/publisher.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_control.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__struct.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/gimble_control.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__builder.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__traits.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__builder.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/gimble_position.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__struct.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__builder.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__traits.hpp \
- /home/hjh/serial_new0122/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.hpp
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_control__type_support.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/gimble_position.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__struct.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__builder.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__traits.hpp \
+ /home/hjh/RMserial/install/def_msg/include/def_msg/def_msg/msg/detail/gimble_position__type_support.hpp

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hjh/serial_new0122/serial/serial_def_sdk
+# Install script for directory: /home/hjh/RMserial/serial/serial_def_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hjh/serial_new0122/install/serial_def_sdk")
+  set(CMAKE_INSTALL_PREFIX "/home/hjh/RMserial/install/serial_def_sdk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk" TYPE EXECUTABLE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/uart")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk" TYPE EXECUTABLE FILES "/home/hjh/RMserial/build/serial_def_sdk/uart")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart"
-         OLD_RPATH "/home/hjh/serial_new0122/install/def_msg/lib:/home/hjh/serial_new0122/install/vision_msg/lib:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/hjh/RMserial/install/def_msg/lib:/home/hjh/RMserial/install/vision_msg/lib:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart")
@@ -63,7 +63,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/uart.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/uart.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -73,12 +73,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/talker"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk" TYPE EXECUTABLE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/talker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk" TYPE EXECUTABLE FILES "/home/hjh/RMserial/build/serial_def_sdk/talker")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/talker" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/talker")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/talker"
-         OLD_RPATH "/opt/ros/humble/lib:/home/hjh/serial_new0122/install/def_msg/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/hjh/RMserial/install/def_msg/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/talker")
@@ -87,19 +87,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/hjh/serial_new0122/build/serial_def_sdk/CMakeFiles/talker.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/hjh/RMserial/build/serial_def_sdk/CMakeFiles/talker.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE DIRECTORY FILES "/home/hjh/serial_new0122/serial/serial_def_sdk/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE DIRECTORY FILES "/home/hjh/RMserial/serial/serial_def_sdk/launch")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial_def_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial_def_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial_def_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial_def_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -107,7 +107,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk/environment" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk/environment" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -115,48 +115,48 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk/environment" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk/environment" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/packages/serial_def_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_index/share/ament_index/resource_index/packages/serial_def_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk/cmake" TYPE FILE FILES
-    "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_core/serial_def_sdkConfig.cmake"
-    "/home/hjh/serial_new0122/build/serial_def_sdk/ament_cmake_core/serial_def_sdkConfig-version.cmake"
+    "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_core/serial_def_sdkConfig.cmake"
+    "/home/hjh/RMserial/build/serial_def_sdk/ament_cmake_core/serial_def_sdkConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/serial_new0122/serial/serial_def_sdk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial_def_sdk" TYPE FILE FILES "/home/hjh/RMserial/serial/serial_def_sdk/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/hjh/serial_new0122/build/serial_def_sdk/install_local_manifest.txt"
+  file(WRITE "/home/hjh/RMserial/build/serial_def_sdk/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -172,6 +172,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/hjh/serial_new0122/build/serial_def_sdk/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/hjh/RMserial/build/serial_def_sdk/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

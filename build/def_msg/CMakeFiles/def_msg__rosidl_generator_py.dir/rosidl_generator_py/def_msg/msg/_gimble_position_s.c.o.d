@@ -1,5 +1,5 @@
 CMakeFiles/def_msg__rosidl_generator_py.dir/rosidl_generator_py/def_msg/msg/_gimble_position_s.c.o: \
- /home/hjh/serial_new0122/build/def_msg/rosidl_generator_py/def_msg/msg/_gimble_position_s.c \
+ /home/hjh/RMserial/build/def_msg/rosidl_generator_py/def_msg/msg/_gimble_position_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,7 +207,7 @@ CMakeFiles/def_msg__rosidl_generator_py.dir/rosidl_generator_py/def_msg/msg/_gim
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/hjh/serial_new0122/build/def_msg/rosidl_generator_c/def_msg/msg/detail/gimble_position__struct.h \
+ /home/hjh/RMserial/build/def_msg/rosidl_generator_c/def_msg/msg/detail/gimble_position__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/hjh/serial_new0122/build/def_msg/rosidl_generator_c/def_msg/msg/detail/gimble_position__functions.h \
- /home/hjh/serial_new0122/build/def_msg/rosidl_generator_c/def_msg/msg/rosidl_generator_c__visibility_control.h
+ /home/hjh/RMserial/build/def_msg/rosidl_generator_c/def_msg/msg/detail/gimble_position__functions.h \
+ /home/hjh/RMserial/build/def_msg/rosidl_generator_c/def_msg/msg/rosidl_generator_c__visibility_control.h

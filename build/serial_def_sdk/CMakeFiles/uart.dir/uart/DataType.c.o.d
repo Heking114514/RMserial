@@ -1,7 +1,7 @@
 CMakeFiles/uart.dir/uart/DataType.c.o: \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.c \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.c \
  /usr/include/stdc-predef.h \
- /home/hjh/serial_new0122/serial/serial_def_sdk/uart/DataType.h \
+ /home/hjh/RMserial/serial/serial_def_sdk/uart/DataType.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

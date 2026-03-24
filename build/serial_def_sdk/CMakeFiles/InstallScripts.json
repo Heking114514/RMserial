@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/hjh/serial_new0122/build/serial_def_sdk/cmake_install.cmake"
+		"/home/hjh/RMserial/build/serial_def_sdk/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

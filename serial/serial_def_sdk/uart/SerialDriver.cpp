@@ -104,6 +104,14 @@ void SerialDriver::readLoop() {
         if (n > 0) {
             // 读到数据了，调用回调通知上层
             if (callback_) {
+            //     printf("\n---[RAW SERIAL READ | %d bytes]---\n", n);
+            // for(int i = 0; i < n; ++i) {
+            //     printf("%02X ", buffer[i]);
+            //     if ((i + 1) % 16 == 0) { // 每16个字节换一行，方便查看
+            //         printf("\n");
+            //     }
+            // }
+            // printf("\n-----------------------------------\n");
                 callback_(buffer, n);
             }
         } else if (n < 0) {

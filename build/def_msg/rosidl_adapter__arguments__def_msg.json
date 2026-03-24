@@ -1,13 +1,13 @@
 {
   "package_name": "def_msg",
   "non_idl_tuples": [
-    "/home/hjh/serial_new0122/serial/def_msg:msg/GobalInformation.msg",
-    "/home/hjh/serial_new0122/serial/def_msg:msg/GimbleControl.msg",
-    "/home/hjh/serial_new0122/serial/def_msg:msg/CommonControl.msg",
-    "/home/hjh/serial_new0122/serial/def_msg:msg/EmControl.msg",
-    "/home/hjh/serial_new0122/serial/def_msg:msg/GimblePosition.msg",
-    "/home/hjh/serial_new0122/serial/def_msg:srv/ControllerModeSet.srv",
-    "/home/hjh/serial_new0122/serial/def_msg:srv/HeartBeat.srv",
-    "/home/hjh/serial_new0122/serial/def_msg:action/NavPose.action"
+    "/home/hjh/RMserial/serial/def_msg:msg/GobalInformation.msg",
+    "/home/hjh/RMserial/serial/def_msg:msg/GimbleControl.msg",
+    "/home/hjh/RMserial/serial/def_msg:msg/CommonControl.msg",
+    "/home/hjh/RMserial/serial/def_msg:msg/EmControl.msg",
+    "/home/hjh/RMserial/serial/def_msg:msg/GimblePosition.msg",
+    "/home/hjh/RMserial/serial/def_msg:srv/ControllerModeSet.srv",
+    "/home/hjh/RMserial/serial/def_msg:srv/HeartBeat.srv",
+    "/home/hjh/RMserial/serial/def_msg:action/NavPose.action"
   ]
 }

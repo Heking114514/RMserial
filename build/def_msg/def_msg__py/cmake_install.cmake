@@ -1,8 +1,8 @@
-# Install script for directory: /home/hjh/serial_new0122/build/def_msg/def_msg__py
+# Install script for directory: /home/hjh/RMserial/build/def_msg/def_msg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hjh/serial_new0122/install/def_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/hjh/RMserial/install/def_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/hjh/serial_new0122/build/def_msg/def_msg__py/install_local_manifest.txt"
+  file(WRITE "/home/hjh/RMserial/build/def_msg/def_msg__py/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

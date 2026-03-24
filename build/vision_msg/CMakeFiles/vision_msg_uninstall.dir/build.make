@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 # Utility rule file for vision_msg_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/vision_msg_uninstall.dir/compiler_depend.make
 include CMakeFiles/vision_msg_uninstall.dir/progress.make
 
 CMakeFiles/vision_msg_uninstall:
-	/usr/bin/cmake -P /home/hjh/serial_new0122/build/vision_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/hjh/RMserial/build/vision_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/vision_msg_uninstall.dir/codegen:
 .PHONY : CMakeFiles/vision_msg_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/vision_msg_uninstall.dir/clean:
 .PHONY : CMakeFiles/vision_msg_uninstall.dir/clean
 
 CMakeFiles/vision_msg_uninstall.dir/depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg/CMakeFiles/vision_msg_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg/CMakeFiles/vision_msg_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vision_msg_uninstall.dir/depend
 

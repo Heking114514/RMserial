@@ -154,6 +154,11 @@ void SeaskyProtocol::sendPacket(uint16_t msg_id, const uint8_t* payload, uint16_
 // ======================= 接收逻辑 (Deserialize) =======================
 
 void SeaskyProtocol::onDataReceived(const uint8_t* data, size_t len) {
+    // printf("[RAW DUMP] ==> ");
+    // for(size_t i = 0; i < len; ++i) {
+    //     printf("%02X ", data[i]);
+    // }
+    // printf("\n");
     std::lock_guard<std::mutex> lock(rx_mutex_);
     
     // 将新数据追加到 buffer
@@ -175,7 +180,10 @@ void SeaskyProtocol::processBuffer() {
 
         // 2. 解析长度
         uint16_t payload_len = (uint16_t)rx_buffer_[1] | ((uint16_t)rx_buffer_[2] << 8);
-        
+        if (rx_buffer_[4] == 0x20 && rx_buffer_[5] == 0x00 && payload_len == 22) {
+            payload_len = 20; 
+        }
+
         // 安全检查：如果解析出的长度大得离谱，肯定是错的
         if (payload_len > 200) { 
             rx_buffer_.erase(rx_buffer_.begin());
@@ -232,7 +240,7 @@ void SeaskyProtocol::dispatchMessage(uint16_t msg_id, const uint8_t* payload, ui
     // 注意：这里的全局变量写操作理论上应该加锁，但为了完全兼容旧的 C 接口（它们直接读写全局变量），
     // 我们暂时不加锁，或者假设上层读取频率较低。
     // 在更严格的设计中，应该提供 Get 函数并返回副本。
-
+    // printf("[ID Sniffer] 👃 Received a valid packet with ID: 0x%04X, Payload Length: %d\n", msg_id, len);
     int pos = 0;
 
     switch (msg_id) {
@@ -270,8 +278,17 @@ void SeaskyProtocol::dispatchMessage(uint16_t msg_id, const uint8_t* payload, ui
         case fix_control:
             // 假设下位机也会回传这个包？通常控制包不需要回传，这里仅作示例
             break;
-
-        default:
+            
+        case sentry_state:
+        if (len >= 20) {
+            memcpy(&sentry_state_receive.battery, payload + pos, 4); pos += 4;
+            memcpy(&sentry_state_receive.life, payload + pos, 4); pos += 4;
+            memcpy(&sentry_state_receive.color, payload + pos, 4); pos += 4;
+            memcpy(&sentry_state_receive.bullet, payload + pos, 4); pos += 4;
+            memcpy(&sentry_state_receive.fault_flag, payload + pos, 4); pos += 4;
+        }
+        break;
+            default:
             // std::cout << "Received unknown ID: " << msg_id << std::endl;
             break;
     }

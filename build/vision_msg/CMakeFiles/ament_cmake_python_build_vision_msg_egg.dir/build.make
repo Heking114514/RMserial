@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjh/serial_new0122/serial/vision_msg
+CMAKE_SOURCE_DIR = /home/hjh/RMserial/serial/vision_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjh/serial_new0122/build/vision_msg
+CMAKE_BINARY_DIR = /home/hjh/RMserial/build/vision_msg
 
 # Utility rule file for ament_cmake_python_build_vision_msg_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_vision_msg_egg:
-	cd /home/hjh/serial_new0122/build/vision_msg/ament_cmake_python/vision_msg && /usr/bin/python3 setup.py egg_info
+	cd /home/hjh/RMserial/build/vision_msg/ament_cmake_python/vision_msg && /usr/bin/python3 setup.py egg_info
 
 CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/depend:
-	cd /home/hjh/serial_new0122/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/serial/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg /home/hjh/serial_new0122/build/vision_msg/CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hjh/RMserial/build/vision_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/serial/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg /home/hjh/RMserial/build/vision_msg/CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_vision_msg_egg.dir/depend
 
