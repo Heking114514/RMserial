@@ -6,7 +6,7 @@ void BaseController::spin2serial(const example_interfaces::msg::Float32::UniqueP
   
   // 2. [新增] 更新最后接收时间
   last_spin_time_ = this->get_clock()->now();
-  this->send_merged_control();
+  // this->send_merged_control();
 }
 
 void BaseController::cmd2serial(const geometry_msgs::msg::Twist::UniquePtr twist_aux) {
@@ -17,7 +17,7 @@ void BaseController::cmd2serial(const geometry_msgs::msg::Twist::UniquePtr twist
   
   // 2. [新增] 更新最后接收时间
   last_cmd_time_ = this->get_clock()->now();
-  this->send_merged_control();
+  // this->send_merged_control();
 
 }
 
@@ -31,7 +31,7 @@ void BaseController::gimble2serial(const def_msg::msg::GimbleControl::UniquePtr 
     
     // 2. [新增] 更新最后接收时间
     last_gimbal_time_ = this->get_clock()->now();
-    this->send_merged_control();
+    // this->send_merged_control();
 }
 void BaseController::control2serial(const def_msg::msg::CommonControl::UniquePtr msg){
     RCLCPP_INFO(get_logger(),"common control started");
@@ -56,7 +56,12 @@ void BaseController::send_merged_control() {
 
   // (2) 检查云台指令 (gimble)
   double gimbal_delay = (current_time - last_gimbal_time_).seconds();
-  if (gimbal_delay > (DATA_TIMEOUT_MS / 1000.0)) {
+  if (override_gimbal_) {
+      // 【新增逻辑】：如果处于强制接管模式，直接覆写为 0
+      fix_control_send.yaw = 0.0;
+      fix_control_send.pitch = 0.0;
+      fix_control_send.fire = 0;
+  } else if (gimbal_delay > (DATA_TIMEOUT_MS / 1000.0)) {
       // 超时了，说明视觉挂了，云台回正，停止开火
       fix_control_send.yaw = 0.0;
       fix_control_send.pitch = 0.0;
@@ -302,7 +307,21 @@ void BaseController::serial2joint(){
   joint.effort = {0,0};
   joint_pub->publish(joint);
 }
-
+void BaseController::mux_service_callback(
+  const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+  std::shared_ptr<std_srvs::srv::SetBool::Response> response) 
+{
+  override_gimbal_ = request->data;
+  response->success = true;
+  
+  if (override_gimbal_) {
+      response->message = "Gimbal override ENABLED: Yaw=0, Pitch=0, Fire=0";
+  } else {
+      response->message = "Gimbal override DISABLED: Auto-aim resumed";
+  }
+  
+  RCLCPP_INFO(this->get_logger(), "%s", response->message.c_str());
+}
 int main(int argc, char* argv[]) {
 	setvbuf(stdout, NULL, _IONBF, BUFSIZ);
 	rclcpp::init(argc, argv);

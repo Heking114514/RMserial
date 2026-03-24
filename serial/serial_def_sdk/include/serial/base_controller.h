@@ -11,6 +11,7 @@
 #include "def_msg/msg/gimble_position.hpp"
 #include "def_msg/msg/gimble_control.hpp"
 //#include "vision_msg/msg/gimble_position.hpp"
+#include <std_srvs/srv/set_bool.hpp>  // <--- 新增标准服务头文件
 #include <sensor_msgs/msg/imu.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>  //used for trans tf
@@ -72,6 +73,10 @@ private:
     rclcpp::Subscription<def_msg::msg::GimbleControl>::SharedPtr gimble_control_sub;
     rclcpp::Subscription<def_msg::msg::CommonControl>::SharedPtr common_control_sub;
     rclcpp::Subscription<example_interfaces::msg::Float32>::SharedPtr spin_sub;
+    bool override_gimbal_ = false;  // 默认不接管（正常自瞄模式）
+    rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr mux_service_;
+    void mux_service_callback(const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+                              std::shared_ptr<std_srvs::srv::SetBool::Response> response);
     float current_spin_speed = 0.0;
 public:
     BaseController(string name):Node(name)
@@ -172,6 +177,16 @@ public:
         // // 注意：需要在 .h 文件中声明 rclcpp::TimerBase::SharedPtr fix_send_timer_;
         // fix_send_timer_ = this->create_wall_timer(100ms, fix_send_callback);
         // [新增] 初始化时间戳
+        mux_service_ = this->create_service<std_srvs::srv::SetBool>(
+            "gimbal_override",
+            std::bind(&BaseController::mux_service_callback, this, _1, _2));
+
+        // 2. 恢复固定频率发送（推荐 50Hz 即 20ms，或者你原本写的 100ms）
+        auto fix_send_callback = [this]() -> void {
+            this->send_merged_control();
+        };
+        // 开启定时器，替代话题回调里的事件驱动，保证接管时也能持续发0
+        fix_send_timer_ = this->create_wall_timer(20ms, fix_send_callback);
         last_cmd_time_ = this->get_clock()->now();
         last_gimbal_time_ = this->get_clock()->now();
         last_spin_time_ = this->get_clock()->now();
@@ -200,7 +215,7 @@ public:
         // };  
         // t4 = this->create_wall_timer(500ms,t4_tim);
         //thread
-        thread (&UartLinux::ReadData,uart).detach();
+        // thread (&UartLinux::ReadData,uart).detach();
         RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
 
     }

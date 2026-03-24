@@ -28,6 +28,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(std_srvs REQUIRED)
 
 #find_package(serial REQUIRED)
 # uncomment the following section in order to fill in
@@ -79,7 +80,8 @@ ament_target_dependencies(uart
         tf2_ros
         tf2
         sensor_msgs
-        example_interfaces 
+        example_interfaces
+        std_srvs 
       )
 #链接动态库
 target_link_libraries(uart

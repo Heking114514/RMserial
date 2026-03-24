@@ -1,1 +1,1 @@
-rclcpp;geometry_msgs;std_mags;nav_msgs;def_msg;vision_msg;example_interfaces;launch;launch_ros;rosidl_default_runtime;ament_lint_auto;ament_lint_common
+rclcpp;geometry_msgs;std_mags;nav_msgs;def_msg;vision_msg;std_srvs;example_interfaces;launch;launch_ros;rosidl_default_runtime;ament_lint_auto;ament_lint_common
