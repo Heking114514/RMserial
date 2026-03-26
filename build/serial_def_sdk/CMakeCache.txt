@@ -281,7 +281,7 @@ SITE:STRING=hjh-Lenovo-G5000-IRH8
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -438,6 +438,9 @@ message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for pb_rm_interfaces.
+pb_rm_interfaces_DIR:PATH=/home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

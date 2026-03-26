@@ -1,0 +1,7 @@
+{
+  "package_name": "pb_rm_interfaces",
+  "non_idl_tuples": [
+    "/home/hjh/RMserial/serial/pb_rm_interfaces:msg/GameStatus.msg",
+    "/home/hjh/RMserial/serial/pb_rm_interfaces:msg/RobotStatus.msg"
+  ]
+}

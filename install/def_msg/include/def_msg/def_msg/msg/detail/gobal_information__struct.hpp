@@ -43,18 +43,18 @@ struct GobalInformation_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->battery = 0l;
-      this->life_extra = 0l;
-      this->color = 0l;
-      this->bullet_extra = 0l;
-      this->fault_flag = 0l;
+      this->battery = 0.0f;
+      this->life_extra = 0.0f;
+      this->color = 0.0f;
+      this->bullet_extra = 0.0f;
+      this->fault_flag = 0.0f;
       this->launch = false;
       this->arm = false;
-      this->base_hp_our = 0l;
-      this->base_hp_enemy = 0l;
-      this->judge_warning = 0l;
-      this->stage_remain_time = 0ll;
-      this->game_progress = 0l;
+      this->base_hp_our = 0.0f;
+      this->base_hp_enemy = 0.0f;
+      this->judge_warning = 0.0f;
+      this->stage_remain_time = 0.0f;
+      this->game_progress = 0.0f;
     }
   }
 
@@ -64,18 +64,18 @@ struct GobalInformation_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->battery = 0l;
-      this->life_extra = 0l;
-      this->color = 0l;
-      this->bullet_extra = 0l;
-      this->fault_flag = 0l;
+      this->battery = 0.0f;
+      this->life_extra = 0.0f;
+      this->color = 0.0f;
+      this->bullet_extra = 0.0f;
+      this->fault_flag = 0.0f;
       this->launch = false;
       this->arm = false;
-      this->base_hp_our = 0l;
-      this->base_hp_enemy = 0l;
-      this->judge_warning = 0l;
-      this->stage_remain_time = 0ll;
-      this->game_progress = 0l;
+      this->base_hp_our = 0.0f;
+      this->base_hp_enemy = 0.0f;
+      this->judge_warning = 0.0f;
+      this->stage_remain_time = 0.0f;
+      this->game_progress = 0.0f;
     }
   }
 
@@ -84,19 +84,19 @@ struct GobalInformation_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _battery_type =
-    int32_t;
+    float;
   _battery_type battery;
   using _life_extra_type =
-    int32_t;
+    float;
   _life_extra_type life_extra;
   using _color_type =
-    int32_t;
+    float;
   _color_type color;
   using _bullet_extra_type =
-    int32_t;
+    float;
   _bullet_extra_type bullet_extra;
   using _fault_flag_type =
-    int32_t;
+    float;
   _fault_flag_type fault_flag;
   using _launch_type =
     bool;
@@ -105,19 +105,19 @@ struct GobalInformation_
     bool;
   _arm_type arm;
   using _base_hp_our_type =
-    int32_t;
+    float;
   _base_hp_our_type base_hp_our;
   using _base_hp_enemy_type =
-    int32_t;
+    float;
   _base_hp_enemy_type base_hp_enemy;
   using _judge_warning_type =
-    int32_t;
+    float;
   _judge_warning_type judge_warning;
   using _stage_remain_time_type =
-    int64_t;
+    float;
   _stage_remain_time_type stage_remain_time;
   using _game_progress_type =
-    int32_t;
+    float;
   _game_progress_type game_progress;
 
   // setters for named parameter idiom
@@ -128,31 +128,31 @@ struct GobalInformation_
     return *this;
   }
   Type & set__battery(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->battery = _arg;
     return *this;
   }
   Type & set__life_extra(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->life_extra = _arg;
     return *this;
   }
   Type & set__color(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->color = _arg;
     return *this;
   }
   Type & set__bullet_extra(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->bullet_extra = _arg;
     return *this;
   }
   Type & set__fault_flag(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->fault_flag = _arg;
     return *this;
@@ -170,31 +170,31 @@ struct GobalInformation_
     return *this;
   }
   Type & set__base_hp_our(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->base_hp_our = _arg;
     return *this;
   }
   Type & set__base_hp_enemy(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->base_hp_enemy = _arg;
     return *this;
   }
   Type & set__judge_warning(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->judge_warning = _arg;
     return *this;
   }
   Type & set__stage_remain_time(
-    const int64_t & _arg)
+    const float & _arg)
   {
     this->stage_remain_time = _arg;
     return *this;
   }
   Type & set__game_progress(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->game_progress = _arg;
     return *this;

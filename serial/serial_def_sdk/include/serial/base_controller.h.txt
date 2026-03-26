@@ -11,6 +11,7 @@
 #include "def_msg/msg/gimble_position.hpp"
 #include "def_msg/msg/gimble_control.hpp"
 //#include "vision_msg/msg/gimble_position.hpp"
+#include <std_srvs/srv/set_bool.hpp>  // <--- 新增标准服务头文件
 #include <sensor_msgs/msg/imu.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>  //used for trans tf
@@ -20,8 +21,10 @@
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/transform_broadcaster.h>//#include <tf/transform_broadcaster.h>
 #include <sensor_msgs/msg/joint_state.hpp>
-
+#include <example_interfaces/msg/float32.hpp> 
 #include "uart_hd.h"
+#include "DataType.h"
+#include "uart.h"
 
 
 using namespace std;
@@ -44,11 +47,19 @@ private:
     rclcpp::TimerBase::SharedPtr imu_timer;
     rclcpp::TimerBase::SharedPtr yaw_timer;
     rclcpp::TimerBase::SharedPtr game_status_timer;
+    rclcpp::TimerBase::SharedPtr send_timer_;
 
+    rclcpp::TimerBase::SharedPtr fix_send_timer_;
     rclcpp::TimerBase::SharedPtr t1;
     rclcpp::TimerBase::SharedPtr t2;
     rclcpp::TimerBase::SharedPtr t3;
     rclcpp::TimerBase::SharedPtr t4;
+    
+    rclcpp::Time last_cmd_time_;
+    rclcpp::Time last_gimbal_time_;
+    rclcpp::Time last_spin_time_;
+    const int DATA_TIMEOUT_MS = 500; 
+
     /************  claim publisher *******************/
     rclcpp::Publisher<def_msg::msg::GimbleControl>::SharedPtr gimble_pub;  //publish the gimble recv data
     std::unique_ptr<tf2_ros::TransformBroadcaster> odom_broadcaster;
@@ -61,7 +72,12 @@ private:
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_sub;
     rclcpp::Subscription<def_msg::msg::GimbleControl>::SharedPtr gimble_control_sub;
     rclcpp::Subscription<def_msg::msg::CommonControl>::SharedPtr common_control_sub;
-    
+    rclcpp::Subscription<example_interfaces::msg::Float32>::SharedPtr spin_sub;
+    bool override_gimbal_ = false;  // 默认不接管（正常自瞄模式）
+    rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr mux_service_;
+    void mux_service_callback(const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+                              std::shared_ptr<std_srvs::srv::SetBool::Response> response);
+    float current_spin_speed = 0.0;
 public:
     BaseController(string name):Node(name)
     {
@@ -79,6 +95,10 @@ public:
         gimble_control_sub = 
             this->create_subscription<def_msg::msg::GimbleControl>("vision/gimble_control", rclcpp::SensorDataQoS(),
         std::bind(&BaseController::gimble2serial, this, _1));
+
+        spin_sub = 
+            this->create_subscription<example_interfaces::msg::Float32>("cmd_spin", 10,
+        std::bind(&BaseController::spin2serial, this, _1));
 
         //common_control cmd
         common_control_sub = 
@@ -150,6 +170,29 @@ public:
             heartbeat2serial();
         };  
         heartbeat_timer = this->create_wall_timer(200ms,heartbeat_callback);
+        
+        // auto fix_send_callback = [this]() -> void {
+        //     this->send_merged_control();
+        // };
+        // // 注意：需要在 .h 文件中声明 rclcpp::TimerBase::SharedPtr fix_send_timer_;
+        // fix_send_timer_ = this->create_wall_timer(100ms, fix_send_callback);
+        // [新增] 初始化时间戳
+        mux_service_ = this->create_service<std_srvs::srv::SetBool>(
+            "gimbal_override",
+            std::bind(&BaseController::mux_service_callback, this, _1, _2));
+
+        // 2. 恢复固定频率发送（推荐 50Hz 即 20ms，或者你原本写的 100ms）
+        auto fix_send_callback = [this]() -> void {
+            this->send_merged_control();
+        };
+        // 开启定时器，替代话题回调里的事件驱动，保证接管时也能持续发0
+        fix_send_timer_ = this->create_wall_timer(20ms, fix_send_callback);
+        last_cmd_time_ = this->get_clock()->now();
+        last_gimbal_time_ = this->get_clock()->now();
+        last_spin_time_ = this->get_clock()->now();
+
+        // 启动接收线程
+        thread (&UartLinux::ReadData,uart).detach();
         //
         // auto t1_tim =  [this]() -> void{
         //     control2serial_t();
@@ -183,6 +226,7 @@ public:
     inline void cmd2serial(const geometry_msgs::msg::Twist::UniquePtr twist_aux); //cmd控制命令转串口(ros->serial)
     void gimble2serial(const def_msg::msg::GimbleControl::UniquePtr msg); // 云台控制(ros->serial)
     inline void control2serial(const def_msg::msg::CommonControl::UniquePtr msg);  //机器人电控状态控制(ros->serial)
+    void spin2serial(const example_interfaces::msg::Float32::UniquePtr msg);
     void heartbeat2serial(); //心跳包
     // inline void control2serial_t();
     // inline void gimble2serial_t();
@@ -194,6 +238,7 @@ public:
     void serial2heartbeat(const def_msg::srv::HeartBeat::Request::SharedPtr request,
         const def_msg::srv::HeartBeat::Response::SharedPtr response);
     void serial2joint();
+    void send_merged_control(); 
 
 private:
     string uart_port;

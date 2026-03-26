@@ -57,7 +57,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "battery",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -74,7 +74,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "life_extra",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -91,7 +91,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "color",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -108,7 +108,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "bullet_extra",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -125,7 +125,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "fault_flag",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -176,7 +176,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "base_hp_our",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -193,7 +193,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "base_hp_enemy",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -210,7 +210,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "judge_warning",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -227,7 +227,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "stage_remain_time",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -244,7 +244,7 @@ static rosidl_typesupport_introspection_c__MessageMember def_msg__msg__GobalInfo
   },
   {
     "game_progress",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

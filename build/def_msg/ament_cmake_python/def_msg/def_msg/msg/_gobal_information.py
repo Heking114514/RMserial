@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -76,34 +78,34 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'battery': 'int32',
-        'life_extra': 'int32',
-        'color': 'int32',
-        'bullet_extra': 'int32',
-        'fault_flag': 'int32',
+        'battery': 'float',
+        'life_extra': 'float',
+        'color': 'float',
+        'bullet_extra': 'float',
+        'fault_flag': 'float',
         'launch': 'boolean',
         'arm': 'boolean',
-        'base_hp_our': 'int32',
-        'base_hp_enemy': 'int32',
-        'judge_warning': 'int32',
-        'stage_remain_time': 'int64',
-        'game_progress': 'int32',
+        'base_hp_our': 'float',
+        'base_hp_enemy': 'float',
+        'judge_warning': 'float',
+        'stage_remain_time': 'float',
+        'game_progress': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -112,18 +114,18 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
-        self.battery = kwargs.get('battery', int())
-        self.life_extra = kwargs.get('life_extra', int())
-        self.color = kwargs.get('color', int())
-        self.bullet_extra = kwargs.get('bullet_extra', int())
-        self.fault_flag = kwargs.get('fault_flag', int())
+        self.battery = kwargs.get('battery', float())
+        self.life_extra = kwargs.get('life_extra', float())
+        self.color = kwargs.get('color', float())
+        self.bullet_extra = kwargs.get('bullet_extra', float())
+        self.fault_flag = kwargs.get('fault_flag', float())
         self.launch = kwargs.get('launch', bool())
         self.arm = kwargs.get('arm', bool())
-        self.base_hp_our = kwargs.get('base_hp_our', int())
-        self.base_hp_enemy = kwargs.get('base_hp_enemy', int())
-        self.judge_warning = kwargs.get('judge_warning', int())
-        self.stage_remain_time = kwargs.get('stage_remain_time', int())
-        self.game_progress = kwargs.get('game_progress', int())
+        self.base_hp_our = kwargs.get('base_hp_our', float())
+        self.base_hp_enemy = kwargs.get('base_hp_enemy', float())
+        self.judge_warning = kwargs.get('judge_warning', float())
+        self.stage_remain_time = kwargs.get('stage_remain_time', float())
+        self.game_progress = kwargs.get('game_progress', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -210,10 +212,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def battery(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'battery' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'battery' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'battery' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'battery' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._battery = value
 
     @builtins.property
@@ -225,10 +227,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def life_extra(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'life_extra' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'life_extra' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'life_extra' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'life_extra' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._life_extra = value
 
     @builtins.property
@@ -240,10 +242,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def color(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'color' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'color' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'color' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'color' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._color = value
 
     @builtins.property
@@ -255,10 +257,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def bullet_extra(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'bullet_extra' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'bullet_extra' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'bullet_extra' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'bullet_extra' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._bullet_extra = value
 
     @builtins.property
@@ -270,10 +272,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def fault_flag(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'fault_flag' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'fault_flag' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'fault_flag' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'fault_flag' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._fault_flag = value
 
     @builtins.property
@@ -311,10 +313,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def base_hp_our(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'base_hp_our' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'base_hp_our' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'base_hp_our' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'base_hp_our' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._base_hp_our = value
 
     @builtins.property
@@ -326,10 +328,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def base_hp_enemy(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'base_hp_enemy' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'base_hp_enemy' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'base_hp_enemy' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'base_hp_enemy' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._base_hp_enemy = value
 
     @builtins.property
@@ -341,10 +343,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def judge_warning(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'judge_warning' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'judge_warning' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'judge_warning' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'judge_warning' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._judge_warning = value
 
     @builtins.property
@@ -356,10 +358,10 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def stage_remain_time(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'stage_remain_time' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'stage_remain_time' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'stage_remain_time' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'stage_remain_time' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._stage_remain_time = value
 
     @builtins.property
@@ -371,8 +373,8 @@ class GobalInformation(metaclass=Metaclass_GobalInformation):
     def game_progress(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'game_progress' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'game_progress' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'game_progress' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'game_progress' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._game_progress = value

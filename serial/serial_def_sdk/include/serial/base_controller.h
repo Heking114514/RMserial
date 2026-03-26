@@ -25,6 +25,8 @@
 #include "uart_hd.h"
 #include "DataType.h"
 #include "uart.h"
+#include "pb_rm_interfaces/msg/game_status.hpp"
+#include "pb_rm_interfaces/msg/robot_status.hpp"
 
 
 using namespace std;
@@ -68,6 +70,10 @@ private:
     std::unique_ptr<tf2_ros::TransformBroadcaster> gimble_broadcaster;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu2_pub;
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub;   //yaw_timer
+
+    rclcpp::Publisher<pb_rm_interfaces::msg::GameStatus>::SharedPtr game_status_pub_;
+    rclcpp::Publisher<pb_rm_interfaces::msg::RobotStatus>::SharedPtr robot_status_pub_;
+
     /************  chaim sub ***********************/
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_sub;
     rclcpp::Subscription<def_msg::msg::GimbleControl>::SharedPtr gimble_control_sub;
@@ -112,6 +118,11 @@ public:
 
         gobal_information_pub=
             this->create_publisher<def_msg::msg::GobalInformation>("hardware/gobal_information",10);
+
+            game_status_pub_ = 
+            this->create_publisher<pb_rm_interfaces::msg::GameStatus>("/robot/referee/game_status", 10);
+        robot_status_pub_ = 
+            this->create_publisher<pb_rm_interfaces::msg::RobotStatus>("/robot/referee/robot_status", 10);
 
         gimble_pub=
             this->create_publisher<def_msg::msg::GimbleControl>("hardware/gimble_current_rpy",10);
@@ -215,7 +226,7 @@ public:
         // };  
         // t4 = this->create_wall_timer(500ms,t4_tim);
         //thread
-        // thread (&UartLinux::ReadData,uart).detach();
+        thread (&UartLinux::ReadData,uart).detach();
         RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
 
     }

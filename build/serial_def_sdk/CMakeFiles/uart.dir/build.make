@@ -219,6 +219,12 @@ uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesuppor
 uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_cpp.so
 uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_cpp.so
 uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_generator_py.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_c.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_c.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_cpp.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_cpp.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_py.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
@@ -247,6 +253,8 @@ uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_typesupport_c.so
 uart: /home/hjh/RMserial/install/def_msg/lib/libdef_msg__rosidl_generator_c.so
 uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_typesupport_c.so
 uart: /home/hjh/RMserial/install/vision_msg/lib/libvision_msg__rosidl_generator_c.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_c.so
+uart: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 uart: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 uart: /opt/ros/humble/lib/libtf2_ros.so

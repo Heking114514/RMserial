@@ -105,10 +105,10 @@ typedef struct {
 } FixControlData;
 
 typedef struct {
-    // 1. 云台数据 (9 bytes: 4+4+1)
-    float yaw;
-    float pitch;
-    uint8_t fire; 
+    // // 1. 云台数据 (9 bytes: 4+4+1)
+    // float yaw;
+    // float pitch;
+    // uint8_t fire; 
     
     // 2. 心跳数据 (7 bytes: 2+1+1+1+1+1)
     // uint16_t timestamp;

@@ -14,23 +14,23 @@ module def_msg {
 
       @verbatim (language="comment", text=
         "剩下电量     0--100")
-      int32 battery;
+      float battery;
 
       @verbatim (language="comment", text=
         "剩下生命  0--100")
-      int32 life_extra;
+      float life_extra;
 
       @verbatim (language="comment", text=
         "装甲板颜色")
-      int32 color;
+      float color;
 
       @verbatim (language="comment", text=
         "剩余子弹 0-255")
-      int32 bullet_extra;
+      float bullet_extra;
 
       @verbatim (language="comment", text=
         "故障指示电控方面")
-      int32 fault_flag;
+      float fault_flag;
 
       @verbatim (language="comment", text=
         "additional data")
@@ -38,17 +38,17 @@ module def_msg {
 
       boolean arm;
 
-      int32 base_hp_our;
+      float base_hp_our;
 
-      int32 base_hp_enemy;
+      float base_hp_enemy;
 
-      int32 judge_warning;
+      float judge_warning;
 
       @verbatim (language="comment", text=
         "game_data")
-      int64 stage_remain_time;
+      float stage_remain_time;
 
-      int32 game_progress;
+      float game_progress;
     };
   };
 };

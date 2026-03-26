@@ -70,8 +70,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->battery = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->battery = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // life_extra
@@ -79,8 +79,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->life_extra = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->life_extra = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // color
@@ -88,8 +88,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->color = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->color = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // bullet_extra
@@ -97,8 +97,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->bullet_extra = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->bullet_extra = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // fault_flag
@@ -106,8 +106,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->fault_flag = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->fault_flag = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // launch
@@ -133,8 +133,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->base_hp_our = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->base_hp_our = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // base_hp_enemy
@@ -142,8 +142,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->base_hp_enemy = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->base_hp_enemy = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // judge_warning
@@ -151,8 +151,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->judge_warning = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->judge_warning = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // stage_remain_time
@@ -160,8 +160,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->stage_remain_time = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->stage_remain_time = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // game_progress
@@ -169,8 +169,8 @@ bool def_msg__msg__gobal_information__convert_from_py(PyObject * _pymsg, void * 
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->game_progress = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->game_progress = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -211,7 +211,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // battery
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->battery);
+    field = PyFloat_FromDouble(ros_message->battery);
     {
       int rc = PyObject_SetAttrString(_pymessage, "battery", field);
       Py_DECREF(field);
@@ -222,7 +222,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // life_extra
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->life_extra);
+    field = PyFloat_FromDouble(ros_message->life_extra);
     {
       int rc = PyObject_SetAttrString(_pymessage, "life_extra", field);
       Py_DECREF(field);
@@ -233,7 +233,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // color
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->color);
+    field = PyFloat_FromDouble(ros_message->color);
     {
       int rc = PyObject_SetAttrString(_pymessage, "color", field);
       Py_DECREF(field);
@@ -244,7 +244,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // bullet_extra
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->bullet_extra);
+    field = PyFloat_FromDouble(ros_message->bullet_extra);
     {
       int rc = PyObject_SetAttrString(_pymessage, "bullet_extra", field);
       Py_DECREF(field);
@@ -255,7 +255,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // fault_flag
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->fault_flag);
+    field = PyFloat_FromDouble(ros_message->fault_flag);
     {
       int rc = PyObject_SetAttrString(_pymessage, "fault_flag", field);
       Py_DECREF(field);
@@ -288,7 +288,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // base_hp_our
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->base_hp_our);
+    field = PyFloat_FromDouble(ros_message->base_hp_our);
     {
       int rc = PyObject_SetAttrString(_pymessage, "base_hp_our", field);
       Py_DECREF(field);
@@ -299,7 +299,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // base_hp_enemy
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->base_hp_enemy);
+    field = PyFloat_FromDouble(ros_message->base_hp_enemy);
     {
       int rc = PyObject_SetAttrString(_pymessage, "base_hp_enemy", field);
       Py_DECREF(field);
@@ -310,7 +310,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // judge_warning
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->judge_warning);
+    field = PyFloat_FromDouble(ros_message->judge_warning);
     {
       int rc = PyObject_SetAttrString(_pymessage, "judge_warning", field);
       Py_DECREF(field);
@@ -321,7 +321,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // stage_remain_time
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->stage_remain_time);
+    field = PyFloat_FromDouble(ros_message->stage_remain_time);
     {
       int rc = PyObject_SetAttrString(_pymessage, "stage_remain_time", field);
       Py_DECREF(field);
@@ -332,7 +332,7 @@ PyObject * def_msg__msg__gobal_information__convert_to_py(void * raw_ros_message
   }
   {  // game_progress
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->game_progress);
+    field = PyFloat_FromDouble(ros_message->game_progress);
     {
       int rc = PyObject_SetAttrString(_pymessage, "game_progress", field);
       Py_DECREF(field);

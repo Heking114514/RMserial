@@ -196,11 +196,11 @@ void BaseController::serial2global(){
     if((current_time - heartbeat_receive.timestamp)*10/CLOCKS_PER_SEC > TIMESTAMP_ASSERT_DELAY){
       RCLCPP_WARN(this->get_logger(),"--下位机心跳数据超时，断连警告--");
     }
-    status.battery = heartbeat_receive.battery;
-    status.life_extra = heartbeat_receive.life;
-    status.color = heartbeat_receive.color;
-    status.bullet_extra = heartbeat_receive.bullet;
-    status.fault_flag = heartbeat_receive.fault_flag;
+    status.battery = sentry_state_receive.battery;
+    status.life_extra = sentry_state_receive.life;
+    status.color = sentry_state_receive.color;
+    status.bullet_extra = sentry_state_receive.bullet;
+    status.fault_flag = sentry_state_receive.fault_flag;
 
     //additional
     status.launch = additional_data.launch; //if_launch
@@ -210,6 +210,53 @@ void BaseController::serial2global(){
     status.stage_remain_time = game_status_data.stage_remain_time;
     status.game_progress = game_status_data.game_progress;
     gobal_information_pub->publish(status);
+
+    // =========================================================================
+    // ================== [新增] 裁判系统状态数据打包与发布 ====================
+    // =========================================================================
+
+    // 1. 发布 GameStatus
+    pb_rm_interfaces::msg::GameStatus game_msg;
+    // 当 flag = 1 时，game_progress 填 4 (RUNNING)，其他情况填 0 (NOT_START)
+    if (sentry_state_receive.fault_flag == 1) {
+        game_msg.game_progress = 4;
+    } else {
+        game_msg.game_progress = 0;
+    }
+    game_msg.stage_remain_time = 0; // 其他填0
+    game_status_pub_->publish(game_msg);
+
+    // 2. 发布 RobotStatus
+    pb_rm_interfaces::msg::RobotStatus robot_msg;
+    // 动态提取血量
+    robot_msg.current_hp = sentry_state_receive.life;
+    
+    // 其余数据按照你的要求严格写死
+    robot_msg.robot_id = 1;
+    robot_msg.robot_level = 1;
+    robot_msg.maximum_hp = 500;
+    robot_msg.shooter_barrel_cooling_value = 100;
+    robot_msg.shooter_barrel_heat_limit = 350;
+    robot_msg.shooter_17mm_1_barrel_heat = 0;
+    
+    // 姿态默认值 (Position 全 0, Orientation: w=1.0)
+    robot_msg.robot_pos.position.x = 0.0;
+    robot_msg.robot_pos.position.y = 0.0;
+    robot_msg.robot_pos.position.z = 0.0;
+    robot_msg.robot_pos.orientation.x = 0.0;
+    robot_msg.robot_pos.orientation.y = 0.0;
+    robot_msg.robot_pos.orientation.z = 0.0;
+    robot_msg.robot_pos.orientation.w = 1.0;
+    
+    robot_msg.armor_id = 0;
+    robot_msg.hp_deduction_reason = 0;
+    robot_msg.projectile_allowance_17mm = 100;
+    robot_msg.remaining_gold_coin = 1000;
+    robot_msg.is_hp_deduced = false;
+
+    robot_status_pub_->publish(robot_msg);
+
+
 }
 
 

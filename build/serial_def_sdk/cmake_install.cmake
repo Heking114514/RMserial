@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart"
-         OLD_RPATH "/home/hjh/RMserial/install/def_msg/lib:/home/hjh/RMserial/install/vision_msg/lib:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/hjh/RMserial/install/def_msg/lib:/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_def_sdk/uart")

@@ -31,24 +31,24 @@ typedef struct def_msg__msg__GobalInformation
 {
   std_msgs__msg__Header header;
   /// 剩下电量     0--100
-  int32_t battery;
+  float battery;
   /// 剩下生命  0--100
-  int32_t life_extra;
+  float life_extra;
   /// 装甲板颜色
-  int32_t color;
+  float color;
   /// 剩余子弹 0-255
-  int32_t bullet_extra;
+  float bullet_extra;
   /// 故障指示电控方面
-  int32_t fault_flag;
+  float fault_flag;
   /// additional data
   bool launch;
   bool arm;
-  int32_t base_hp_our;
-  int32_t base_hp_enemy;
-  int32_t judge_warning;
+  float base_hp_our;
+  float base_hp_enemy;
+  float judge_warning;
   /// game_data
-  int64_t stage_remain_time;
-  int32_t game_progress;
+  float stage_remain_time;
+  float game_progress;
 } def_msg__msg__GobalInformation;
 
 // Struct for a sequence of def_msg__msg__GobalInformation.
