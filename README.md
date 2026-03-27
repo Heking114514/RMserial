@@ -2,9 +2,25 @@
 *修改自25赛季serial_new*
 ## 使用
 在工作空间下进入/serial文件夹
-
+```bash
 source install/setup.bash
 ros2 launch serial_def_sdk serial.launch.py
+```
+**对于新的ubuntu22.04系统**
+先卸载冲突的两个模块
+```bash
+sudo apt-get purge modemmanager brltty
+```
+然后加入用户组
+```bash
+sudo usermod -a -G dialout $USER
+```
+重启
+```bash
+sudo reboot
+```
+
+
 看到“节点已启动”就算启用成功
 
 ## 结构
