@@ -1,0 +1,298 @@
+[0.010s] Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/pb_rm_interfaces -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/pb_rm_interfaces
+[0.014s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.014s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.014s]   CMake.
+[0.015s] 
+[0.015s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.015s]   to tell CMake that the project requires at least <min> but has been updated
+[0.015s]   to work with policies introduced by <max> or earlier.
+[0.015s] 
+[0.015s] [0m
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.133s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.305s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.305s] -- Detecting CXX compile features
+[0.305s] -- Detecting CXX compile features - done
+[0.315s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.425s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.504s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.517s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.602s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.003s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.884s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.885s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.885s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.885s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.885s]   the cmake_policy command to set the policy and suppress this warning.
+[1.885s] 
+[1.886s] Call Stack (most recent call first):
+[1.886s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.886s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.886s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[1.886s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.886s] [0m
+[1.903s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[1.906s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.907s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.907s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.907s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.907s]   the cmake_policy command to set the policy and suppress this warning.
+[1.907s] 
+[1.907s] Call Stack (most recent call first):
+[1.907s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.907s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.907s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.907s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[1.907s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.907s] [0m
+[1.926s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.926s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.926s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.926s]   the cmake_policy command to set the policy and suppress this warning.
+[1.926s] 
+[1.926s] Call Stack (most recent call first):
+[1.926s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.926s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.926s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.926s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[1.926s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.926s] [0m
+[1.932s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[1.932s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.932s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.932s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.953s] -- Found PythonExtra: .so
+[2.006s] -- Configuring done (2.0s)
+[2.032s] -- Generating done (0.0s)
+[2.044s] -- Build files have been written to: /home/hjh/RMserial/build/pb_rm_interfaces
+[2.051s] Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/pb_rm_interfaces -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/pb_rm_interfaces
+[2.053s] Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/pb_rm_interfaces -- -j16 -l16
+[2.070s] [  2%] [1m[34mGenerating C code for ROS interfaces[0m
+[2.073s] [  5%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[2.078s] [  5%] Built target ament_cmake_python_copy_pb_rm_interfaces
+[2.413s] running egg_info
+[2.413s] creating pb_rm_interfaces.egg-info
+[2.413s] writing pb_rm_interfaces.egg-info/PKG-INFO
+[2.414s] writing dependency_links to pb_rm_interfaces.egg-info/dependency_links.txt
+[2.414s] writing top-level names to pb_rm_interfaces.egg-info/top_level.txt
+[2.414s] writing manifest file 'pb_rm_interfaces.egg-info/SOURCES.txt'
+[2.417s] reading manifest file 'pb_rm_interfaces.egg-info/SOURCES.txt'
+[2.417s] writing manifest file 'pb_rm_interfaces.egg-info/SOURCES.txt'
+[2.449s] [  5%] Built target ament_cmake_python_build_pb_rm_interfaces_egg
+[2.815s] [  7%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pb_rm_interfaces/msg/detail/game_status__functions.c.o[0m
+[2.815s] [ 10%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pb_rm_interfaces/msg/detail/robot_status__functions.c.o[0m
+[2.817s] [ 10%] Built target pb_rm_interfaces__cpp
+[2.830s] [ 12%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.830s] [ 15%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.839s] [ 17%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[2.884s] [ 20%] [1m[32mLinking C shared library libpb_rm_interfaces__rosidl_generator_c.so[0m
+[2.924s] [ 20%] Built target pb_rm_interfaces__rosidl_generator_c
+[2.932s] [ 23%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[2.937s] [ 25%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[2.941s] [ 28%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[3.557s] [ 30%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pb_rm_interfaces/msg/game_status__type_support.cpp.o[0m
+[3.557s] [ 33%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pb_rm_interfaces/msg/robot_status__type_support.cpp.o[0m
+[3.615s] [ 35%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pb_rm_interfaces/msg/detail/robot_status__type_support.cpp.o[0m
+[3.615s] [ 38%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pb_rm_interfaces/msg/detail/game_status__type_support.cpp.o[0m
+[3.628s] [ 43%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pb_rm_interfaces/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[3.628s] [ 43%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pb_rm_interfaces/msg/detail/dds_fastrtps/game_status__type_support.cpp.o[0m
+[3.747s] [ 46%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pb_rm_interfaces/msg/detail/game_status__type_support.c.o[0m
+[3.752s] [ 48%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pb_rm_interfaces/msg/game_status__type_support.cpp.o[0m
+[3.754s] [ 51%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pb_rm_interfaces/msg/detail/robot_status__type_support.c.o[0m
+[3.763s] [ 53%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pb_rm_interfaces/msg/robot_status__type_support.cpp.o[0m
+[3.767s] [ 56%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pb_rm_interfaces/msg/detail/game_status__type_support_c.cpp.o[0m
+[3.775s] [ 58%] [32mBuilding CXX object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pb_rm_interfaces/msg/detail/robot_status__type_support_c.cpp.o[0m
+[3.813s] [ 61%] [1m[32mLinking C shared library libpb_rm_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.821s] [ 64%] [1m[32mLinking CXX shared library libpb_rm_interfaces__rosidl_typesupport_c.so[0m
+[3.847s] [ 64%] Built target pb_rm_interfaces__rosidl_typesupport_introspection_c
+[3.890s] [ 64%] Built target pb_rm_interfaces__rosidl_typesupport_c
+[4.007s] [ 66%] [1m[32mLinking CXX shared library libpb_rm_interfaces__rosidl_typesupport_cpp.so[0m
+[4.082s] [ 66%] Built target pb_rm_interfaces__rosidl_typesupport_cpp
+[4.220s] [ 69%] [1m[32mLinking CXX shared library libpb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.355s] [ 69%] Built target pb_rm_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.478s] [ 71%] [1m[32mLinking CXX shared library libpb_rm_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.489s] [ 74%] [1m[32mLinking CXX shared library libpb_rm_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.630s] [ 74%] Built target pb_rm_interfaces__rosidl_typesupport_introspection_cpp
+[4.646s] [ 74%] Built target pb_rm_interfaces__rosidl_typesupport_fastrtps_c
+[4.662s] [ 74%] Built target pb_rm_interfaces
+[4.694s] [ 76%] [1m[34mGenerating Python code for ROS interfaces[0m
+[5.735s] [ 76%] Built target pb_rm_interfaces__py
+[5.748s] [ 79%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pb_rm_interfaces/msg/_game_status_s.c.o[0m
+[5.748s] [ 82%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pb_rm_interfaces/msg/_robot_status_s.c.o[0m
+[5.830s] [ 84%] [1m[32mLinking C shared library rosidl_generator_py/pb_rm_interfaces/libpb_rm_interfaces__rosidl_generator_py.so[0m
+[5.859s] [ 84%] Built target pb_rm_interfaces__rosidl_generator_py
+[5.872s] [ 87%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.872s] [ 89%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.872s] [ 92%] [32mBuilding C object CMakeFiles/pb_rm_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.936s] [ 94%] [1m[32mLinking C shared library rosidl_generator_py/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.941s] [ 97%] [1m[32mLinking C shared library rosidl_generator_py/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.969s] [ 97%] Built target pb_rm_interfaces__rosidl_typesupport_c__pyext
+[5.970s] [ 97%] Built target pb_rm_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.971s] [100%] [1m[32mLinking C shared library rosidl_generator_py/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.002s] [100%] Built target pb_rm_interfaces__rosidl_typesupport_introspection_c__pyext
+[6.009s] Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/pb_rm_interfaces -- -j16 -l16
+[6.010s] Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/pb_rm_interfaces
+[6.014s] -- Install configuration: ""
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/ament_index/resource_index/rosidl_interfaces/pb_rm_interfaces
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/robot_status.h
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__type_support.h
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__functions.c
+[6.015s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__type_support.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__struct.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__functions.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__functions.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__struct.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__functions.c
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/game_status.h
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/library_path.sh
+[6.016s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/library_path.dsv
+[6.017s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_c.so
+[6.017s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_c.so" to ""
+[6.017s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.017s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.017s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.018s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[6.018s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__rosidl_typesupport_fastrtps_c.h
+[6.018s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.018s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.018s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[6.019s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.019s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.019s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__type_support.c
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__rosidl_typesupport_introspection_c.h
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__type_support.c
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.019s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_c.so
+[6.019s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_c.so
+[6.020s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_c.so" to ""
+[6.020s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.020s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.020s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__type_support.hpp
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__builder.hpp
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__traits.hpp
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__builder.hpp
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__traits.hpp
+[6.020s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__type_support.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__struct.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__struct.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/game_status.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/robot_status.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/dds_fastrtps
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__rosidl_typesupport_fastrtps_cpp.hpp
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.021s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.021s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg
+[6.021s] -- Up-to-date: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__rosidl_typesupport_introspection_cpp.hpp
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__type_support.cpp
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/include/pb_rm_interfaces/pb_rm_interfaces/msg/detail/game_status__type_support.cpp
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_cpp.so
+[6.022s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_cpp.so
+[6.022s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_typesupport_cpp.so" to ""
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/pythonpath.sh
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/pythonpath.dsv
+[6.022s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces-0.0.0-py3.10.egg-info
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/__init__.py
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_c.c
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/_pb_rm_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[6.023s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_robot_status.py
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/__init__.py
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_robot_status_s.c
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_game_status_s.c
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_game_status.py
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.024s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/libpb_rm_interfaces__rosidl_generator_py.so
+[6.046s] Listing '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces'...
+[6.047s] Compiling '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/__init__.py'...
+[6.047s] Listing '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg'...
+[6.047s] Compiling '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/__init__.py'...
+[6.047s] Compiling '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_game_status.py'...
+[6.047s] Compiling '/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/msg/_robot_status.py'...
+[6.050s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.050s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.050s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.051s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.051s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.051s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages/pb_rm_interfaces/pb_rm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.052s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_py.so
+[6.052s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/pb_rm_interfaces/lib/libpb_rm_interfaces__rosidl_generator_py.so" to ""
+[6.052s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/msg/GameStatus.idl
+[6.052s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/msg/RobotStatus.idl
+[6.052s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/msg/GameStatus.msg
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/msg/RobotStatus.msg
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/ament_index/resource_index/package_run_dependencies/pb_rm_interfaces
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/ament_index/resource_index/parent_prefix_path/pb_rm_interfaces
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/ament_prefix_path.sh
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/ament_prefix_path.dsv
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/path.sh
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/environment/path.dsv
+[6.053s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/local_setup.bash
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/local_setup.sh
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/local_setup.zsh
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/local_setup.dsv
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/package.dsv
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/ament_index/resource_index/packages/pb_rm_interfaces
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_generator_cExport.cmake
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_generator_cExport-noconfig.cmake
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[6.054s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_cExport.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_generator_cppExport.cmake
+[6.055s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_cppExport.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_generator_pyExport.cmake
+[6.056s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/export_pb_rm_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/rosidl_cmake-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.057s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.058s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfacesConfig.cmake
+[6.058s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake/pb_rm_interfacesConfig-version.cmake
+[6.058s] -- Installing: /home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/package.xml
+[6.060s] Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/pb_rm_interfaces

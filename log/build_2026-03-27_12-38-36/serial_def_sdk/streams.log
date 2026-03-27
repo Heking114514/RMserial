@@ -1,0 +1,189 @@
+[0.016s] Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hjh/RMserial/serial/serial_def_sdk -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/serial_def_sdk
+[0.020s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.021s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.021s]   CMake.
+[0.021s] 
+[0.021s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.021s]   to tell CMake that the project requires at least <min> but has been updated
+[0.021s]   to work with policies introduced by <max> or earlier.
+[0.021s] 
+[0.021s] [0m
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.132s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.298s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.298s] -- Detecting CXX compile features
+[0.299s] -- Detecting CXX compile features - done
+[0.310s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.424s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.501s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.549s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.554s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.562s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.587s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.652s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.656s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.750s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[0.779s] -- Found FastRTPS: /opt/ros/humble/include
+[0.816s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.891s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.891s] -- Found Threads: TRUE
+[0.951s] -- Found def_msg: 0.0.0 (/home/hjh/RMserial/install/def_msg/share/def_msg/cmake)
+[0.990s] -- Found vision_msg: 0.0.0 (/home/hjh/RMserial/install/vision_msg/share/vision_msg/cmake)
+[1.005s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.017s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.030s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.052s] -- Found tf2: 0.25.11 (/opt/ros/humble/share/tf2/cmake)
+[1.063s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.133s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.154s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.172s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.182s] -- Found pb_rm_interfaces: 0.0.0 (/home/hjh/RMserial/install/pb_rm_interfaces/share/pb_rm_interfaces/cmake)
+[1.197s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.265s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.267s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.267s] -- Configured cppcheck include dirs: /home/hjh/RMserial/serial/serial_def_sdk/./include/serial;/home/hjh/RMserial/serial/serial_def_sdk/./uart
+[1.267s] -- Configured cppcheck exclude dirs and/or files: 
+[1.269s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.269s] -- Configured cpplint exclude dirs and/or files: 
+[1.269s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.270s] -- Added test 'lint_cmake' to check CMake code style
+[1.270s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.272s] -- Added test 'uncrustify' to check C / C++ code style
+[1.272s] -- Configured uncrustify additional arguments: 
+[1.273s] -- Added test 'xmllint' to check XML markup files
+[1.274s] -- Configuring done (1.3s)
+[1.291s] -- Generating done (0.0s)
+[1.318s] -- Build files have been written to: /home/hjh/RMserial/build/serial_def_sdk
+[1.327s] Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hjh/RMserial/serial/serial_def_sdk -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/serial_def_sdk
+[1.329s] Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[1.357s] [  9%] [32mBuilding CXX object CMakeFiles/uart.dir/src/base_controller.cpp.o[0m
+[1.358s] [ 18%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher.cpp.o[0m
+[1.358s] [ 27%] [32mBuilding C object CMakeFiles/uart.dir/uart/crc16.c.o[0m
+[1.359s] [ 36%] [32mBuilding CXX object CMakeFiles/uart.dir/uart/SeaskyProtocol.cpp.o[0m
+[1.359s] [ 54%] [32mBuilding CXX object CMakeFiles/uart.dir/uart/uart_interface.cpp.o[0m
+[1.359s] [ 45%] [32mBuilding CXX object CMakeFiles/uart.dir/uart/SerialDriver.cpp.o[0m
+[1.359s] [ 63%] [32mBuilding C object CMakeFiles/uart.dir/uart/DataType.c.o[0m
+[1.360s] [ 72%] [32mBuilding C object CMakeFiles/uart.dir/uart/crc8.c.o[0m
+[1.361s] [ 81%] [32mBuilding CXX object CMakeFiles/uart.dir/uart/seasky_communicator.cpp.o[0m
+[1.866s] In file included from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.hpp:9[m[K,
+[1.866s]                  from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp:1[m[K:
+[1.866s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:[m[K In constructor ‘[01m[KUartLinux::UartLinux(std::string, int, char, int, int)[m[K’:
+[1.866s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:22:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuart_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.866s]    17 |     UartLinux([01;35m[Kstring uart_name = "/dev/ttyUSB0"[m[K, int nSpeed = 115200, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.866s]       |               [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.866s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.866s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", [01;35m[Kint nSpeed = 115200[m[K, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.866s]       |                                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[1.866s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnEvent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.866s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, [01;35m[Kchar nEvent = 'N'[m[K, int nBits = 8, int nStop = 1) {}
+[1.867s]       |                                                                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[1.867s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnBits[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.867s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', [01;35m[Kint nBits = 8[m[K, int nStop = 1) {}
+[1.867s]       |                                                                                          [01;35m[K~~~~^~~~~~~~~[m[K
+[1.867s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnStop[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.867s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', int nBits = 8, [01;35m[Kint nStop = 1[m[K) {}
+[1.867s]       |                                                                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[1.870s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp:[m[K In member function ‘[01m[Kvoid SeaskyCommunicator::pollingLoop()[m[K’:
+[1.870s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/seasky_communicator.cpp:63:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_fire[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.870s]    63 |     bool [01;35m[Klast_fire[m[K = gimbal_receive.fire; // 新增
+[1.870s]       |          [01;35m[K^~~~~~~~~[m[K
+[1.954s] In file included from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:14[m[K:
+[1.955s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:[m[K In constructor ‘[01m[KUartLinux::UartLinux(std::string, int, char, int, int)[m[K’:
+[1.955s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:22:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuart_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.955s]    17 |     UartLinux([01;35m[Kstring uart_name = "/dev/ttyUSB0"[m[K, int nSpeed = 115200, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.955s]       |               [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.955s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.955s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", [01;35m[Kint nSpeed = 115200[m[K, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[1.955s]       |                                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[1.955s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnEvent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.955s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, [01;35m[Kchar nEvent = 'N'[m[K, int nBits = 8, int nStop = 1) {}
+[1.955s]       |                                                                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[1.955s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnBits[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.955s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', [01;35m[Kint nBits = 8[m[K, int nStop = 1) {}
+[1.956s]       |                                                                                          [01;35m[K~~~~^~~~~~~~~[m[K
+[1.956s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_hd.h:17:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnStop[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.956s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', int nBits = 8, [01;35m[Kint nStop = 1[m[K) {}
+[1.956s]       |                                                                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[1.959s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:[m[K In function ‘[01m[Kvoid defUartRead(uint8_t*, int)[m[K’:
+[1.959s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:77:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreadbuff[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.959s]    77 | void defUartRead([01;35m[Kuint8_t* readbuff[m[K, int nread) {
+[1.959s]       |                  [01;35m[K~~~~~~~~~^~~~~~~~[m[K
+[1.959s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:77:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knread[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.960s]    77 | void defUartRead(uint8_t* readbuff, [01;35m[Kint nread[m[K) {
+[1.960s]       |                                     [01;35m[K~~~~^~~~~[m[K
+[1.960s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:[m[K In function ‘[01m[Kvoid print_frame(const char*, uint8_t*, int)[m[K’:
+[1.960s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:84:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdesc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.960s]    84 | void print_frame([01;35m[Kconst char *desc[m[K, uint8_t *buf, int size) {}
+[1.960s]       |                  [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[1.960s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:84:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.960s]    84 | void print_frame(const char *desc, [01;35m[Kuint8_t *buf[m[K, int size) {}
+[1.960s]       |                                    [01;35m[K~~~~~~~~~^~~[m[K
+[1.960s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:84:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.960s]    84 | void print_frame(const char *desc, uint8_t *buf, [01;35m[Kint size[m[K) {}
+[1.960s]       |                                                  [01;35m[K~~~~^~~~[m[K
+[1.961s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:[m[K In function ‘[01m[Kbool WriteDataWapper(const unsigned char*, unsigned int)[m[K’:
+[1.961s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:85:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpData[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.961s]    85 | bool WriteDataWapper([01;35m[Kconst unsigned char* pData[m[K, unsigned int length) { return false; }
+[1.961s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.961s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/uart/uart_interface.cpp:85:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klength[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.961s]    85 | bool WriteDataWapper(const unsigned char* pData, [01;35m[Kunsigned int length[m[K) { return false; }
+[1.961s]       |                                                  [01;35m[K~~~~~~~~~~~~~^~~~~~[m[K
+[3.111s] In file included from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./include/serial/base_controller.h:25[m[K,
+[3.111s]                  from [01m[K/home/hjh/RMserial/serial/serial_def_sdk/src/base_controller.cpp:1[m[K:
+[3.111s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:[m[K In constructor ‘[01m[KUartLinux::UartLinux(std::string, int, char, int, int)[m[K’:
+[3.111s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:22:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuart_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.111s]    17 |     UartLinux([01;35m[Kstring uart_name = "/dev/ttyUSB0"[m[K, int nSpeed = 115200, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[3.111s]       |               [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.111s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.112s]    17 |     UartLinux(string uart_name = "/dev/ttyUSB0", [01;35m[Kint nSpeed = 115200[m[K, char nEvent = 'N', int nBits = 8, int nStop = 1) {}
+[3.112s]       |                                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[3.112s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnEvent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.112s]    17 | tring uart_name = "/dev/ttyUSB0", int nSpeed = 115200, [01;35m[Kchar nEvent = 'N'[m[K, int nBits = 8, int nStop = 1) {}
+[3.112s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[3.112s] 
+[3.112s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnBits[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.112s]    17 | "/dev/ttyUSB0", int nSpeed = 115200, char nEvent = 'N', [01;35m[Kint nBits = 8[m[K, int nStop = 1) {}
+[3.112s]       |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[3.112s] 
+[3.112s] [01m[K/home/hjh/RMserial/serial/serial_def_sdk/./uart/uart_hd.h:17:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnStop[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.112s]    17 |  int nSpeed = 115200, char nEvent = 'N', int nBits = 8, [01;35m[Kint nStop = 1[m[K) {}
+[3.113s]       |                                                         [01;35m[K~~~~^~~~~~~~~[m[K
+[3.113s] 
+[4.511s] [ 90%] [1m[32mLinking CXX executable talker[0m
+[4.659s] [ 90%] Built target talker
+[15.127s] [100%] [1m[32mLinking CXX executable uart[0m
+[16.043s] [100%] Built target uart
+[16.050s] Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hjh/RMserial/build/serial_def_sdk -- -j16 -l16
+[16.052s] Invoking command in '/home/hjh/RMserial/build/serial_def_sdk': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk
+[16.056s] -- Install configuration: ""
+[16.056s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/uart
+[16.066s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/uart" to ""
+[16.066s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/talker
+[16.067s] -- Set non-toolchain portion of runtime path of "/home/hjh/RMserial/install/serial_def_sdk/lib/serial_def_sdk/talker" to ""
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/launch
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/launch/serial.launch.py
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/package_run_dependencies/serial_def_sdk
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/parent_prefix_path/serial_def_sdk
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.sh
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/ament_prefix_path.dsv
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/path.sh
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/environment/path.dsv
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.bash
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.sh
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.zsh
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/local_setup.dsv
+[16.067s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.dsv
+[16.068s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/ament_index/resource_index/packages/serial_def_sdk
+[16.068s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig.cmake
+[16.068s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/cmake/serial_def_sdkConfig-version.cmake
+[16.068s] -- Installing: /home/hjh/RMserial/install/serial_def_sdk/share/serial_def_sdk/package.xml
+[16.070s] Invoked command in '/home/hjh/RMserial/build/serial_def_sdk' returned '0': AMENT_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hjh/RMserial/install/vision_msg:/home/hjh/RMserial/install/pb_rm_interfaces:/home/hjh/RMserial/install/def_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/hjh/RMserial/install/vision_msg/lib:/home/hjh/RMserial/install/pb_rm_interfaces/lib:/home/hjh/RMserial/install/def_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hjh/RMserial/install/vision_msg/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/pb_rm_interfaces/local/lib/python3.10/dist-packages:/home/hjh/RMserial/install/def_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hjh/RMserial/build/serial_def_sdk

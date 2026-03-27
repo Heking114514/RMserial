@@ -78,8 +78,13 @@ int SerialDriver::write(const uint8_t* data, size_t len) {
 
     while (remaining > 0) {
         int n = ::write(fd_, data + total_written, remaining);
-        if (n < 0) {
-            perror("[SerialDriver] Write error");
+        if (n <= 0) {
+            if (errno != EAGAIN) {
+                // 写入时发生物理断开
+                std::cerr << "\n[SerialDriver] WARNING: Write failed, device lost!" << std::endl;
+                ::close(fd_); // 核心修复：立刻释放
+                fd_ = -1;
+            }
             return -1;
         }
         total_written += n;
@@ -114,13 +119,13 @@ void SerialDriver::readLoop() {
             // printf("\n-----------------------------------\n");
                 callback_(buffer, n);
             }
-        } else if (n < 0) {
-            if (errno != EAGAIN) { // EAGAIN 表示暂时无数据
-                // 真正的错误
-                // std::cerr << "[SerialDriver] Read error." << std::endl;
-            }
-            // 避免空转占用 CPU
-            std::this_thread::sleep_for(std::chrono::milliseconds(1));
+        } else if (n == 0 || (n < 0 && errno != EAGAIN)) {
+            // n == 0 表示对端关闭(EOF)，n < 0 且非 EAGAIN 表示发生了物理断开(如 EIO)
+            std::cerr << "\n[SerialDriver] WARNING: Device disconnected! Releasing port..." << std::endl;
+            ::close(fd_);  // 核心修复：立刻释放文件描述符
+            fd_ = -1;      // 将描述符置为 -1
+            break;    
+            
         } else {
             // n == 0, EOF or timeout
             std::this_thread::sleep_for(std::chrono::milliseconds(1));
