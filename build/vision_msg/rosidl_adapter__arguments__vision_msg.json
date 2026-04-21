@@ -1,8 +1,0 @@
-{
-  "package_name": "vision_msg",
-  "non_idl_tuples": [
-    "/home/hjh/RMserial/serial/vision_msg:msg/GimblePosition.msg",
-    "/home/hjh/RMserial/serial/vision_msg:msg/DetectedId.msg",
-    "/home/hjh/RMserial/serial/vision_msg:msg/SelectedId.msg"
-  ]
-}

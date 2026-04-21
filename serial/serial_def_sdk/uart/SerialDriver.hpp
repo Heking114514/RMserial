@@ -41,7 +41,8 @@ private:
 
 private:
     std::string device_name_;
-    int fd_; // 文件描述符
+    std::atomic<int> fd_{-1};      // 改为原子类型，防止多线程断线重连时引发竞态问题
+    int current_baudrate_{115200}; // 保存当前的波特率，用于重连
     
     std::atomic<bool> is_running_; // 线程运行标志
     std::thread read_thread_;      // 读取线程

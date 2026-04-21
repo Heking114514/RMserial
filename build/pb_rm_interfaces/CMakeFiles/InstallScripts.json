@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/hjh/RMserial/build/pb_rm_interfaces/cmake_install.cmake",
-		"/home/hjh/RMserial/build/pb_rm_interfaces/pb_rm_interfaces__py/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

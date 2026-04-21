@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/hjh/RMserial/build/serial_def_sdk/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

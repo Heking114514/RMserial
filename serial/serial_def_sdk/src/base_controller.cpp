@@ -41,58 +41,73 @@ void BaseController::control2serial(const def_msg::msg::CommonControl::UniquePtr
 }
 
 void BaseController::send_merged_control() {
+  // 1. 记录程序刚启动时赋予的初始时间戳
+  // 这样我们就能知道，如果不等于这个初始时间，说明是真的来过消息了
+  static rclcpp::Time init_cmd_time = last_cmd_time_;
+  static rclcpp::Time init_gimbal_time = last_gimbal_time_;
+  static rclcpp::Time init_spin_time = last_spin_time_;
+
+  // 2. 初始拦截锁：在收到任何第一条消息之前，绝对保持静默，不发数据
+  static bool has_ever_received = false;
+  if (!has_ever_received) {
+      if (last_cmd_time_ != init_cmd_time || 
+          last_gimbal_time_ != init_gimbal_time || 
+          last_spin_time_ != init_spin_time) {
+          has_ever_received = true; // 终于收到消息了，解除拦截锁！
+      } else {
+          return; // 还没收到过任何消息，静悄悄地退出
+      }
+  }
+
   auto current_time = this->get_clock()->now();
 
-  // ================== 1. 检查超时并归零 ==================
+  // 3. 判断各个话题目前是否还“活着”（判定标准：0.5秒内有收到过新消息）
+  bool cmd_alive = (current_time - last_cmd_time_).seconds() <= 0.5;
+  bool gimbal_alive = (current_time - last_gimbal_time_).seconds() <= 0.5;
+  bool spin_alive = (current_time - last_spin_time_).seconds() <= 0.5;
 
-  // (1) 检查底盘指令 (cmd_vel)
-  double cmd_delay = (current_time - last_cmd_time_).seconds();
-  if (cmd_delay > (DATA_TIMEOUT_MS / 1000.0)) {
-      // 超时了，说明导航挂了或者没发消息，安全停车
+  // ====================================================================
+  // 【核心满足你的要求】：如果所有被订阅的话题都超时“死掉”了，直接停止发送！
+  // ====================================================================
+  if (!cmd_alive && !gimbal_alive && !spin_alive) {
+      return; 
+  }
+
+  // ====================================================================
+  // 走到这里，说明【至少有一个】话题还在正常发送，那我们就拼包把它发出去
+  // ====================================================================
+  
+  // (1) 检查底盘是否阵亡，如果底盘挂了而云台还在，底盘数据清零
+  if (!cmd_alive) {
       fix_control_send.vx = 0.0;
       fix_control_send.vy = 0.0;
       fix_control_send.vz = 0.0;
   }
 
-  // (2) 检查云台指令 (gimble)
-  double gimbal_delay = (current_time - last_gimbal_time_).seconds();
+  // (2) 检查云台是否接管或阵亡
   if (override_gimbal_) {
-      // 【新增逻辑】：如果处于强制接管模式，直接覆写为 0
       fix_control_send.yaw = 0.0;
       fix_control_send.pitch = 0.0;
       fix_control_send.fire = 0;
-  } else if (gimbal_delay > (DATA_TIMEOUT_MS / 1000.0)) {
-      // 超时了，说明视觉挂了，云台回正，停止开火
+  } else if (!gimbal_alive) {
       fix_control_send.yaw = 0.0;
       fix_control_send.pitch = 0.0;
       fix_control_send.fire = 0;
   }
 
-  // (3) 检查小陀螺指令 (spin)
-  double spin_delay = (current_time - last_spin_time_).seconds();
-  if (spin_delay > (DATA_TIMEOUT_MS / 1000.0)) {
-      // 超时了，关闭小陀螺
+  // (3) 检查小陀螺是否阵亡
+  if (!spin_alive) {
       current_spin_speed = 0.0;
   }
 
-  // ================== 2. 处理互斥逻辑 (保持不变) ==================
-  
+  // 互斥逻辑
   if (abs(current_spin_speed) > 0.001) {
-      // [小陀螺模式] 赋值 spin，但不再清零 vx 和 vy
       fix_control_send.spin = current_spin_speed;
-      
-      // 注意：一般开启小陀螺时，底盘的高频自转由 spin 控制。
-      // 如果你希望此时忽略导航发来的常规转向(vz)，可以加上下面这句：
-      // fix_control_send.vz = 0.0; 
   } else {
-      // [正常模式] 确保 spin 为 0
       fix_control_send.spin = 0.0;
-      // vx, vy, vz 使用上面的值 (正常平移和转向)
   }
-  // ================== 3. 发送数据 ==================
-  // 无论是否有数据，我们都以 50Hz 发送。
-  // 如果所有话题都超时，这里发出去的就是全 0 包，机器人会安全停止。
-  // %.2f 表示保留两位小数
+
+  // 4. 执行串口发送
   RCLCPP_INFO(this->get_logger(), 
       "发送串口数据 -> [底盘] vx:%.2f vy:%.2f vz:%.2f spin:%.2f | [云台] yaw:%.2f pitch:%.2f fire:%d",
       fix_control_send.vx,
@@ -103,8 +118,8 @@ void BaseController::send_merged_control() {
       fix_control_send.pitch,
       fix_control_send.fire
   );
-  defUartSend(fix_control);
   
+  defUartSend(fix_control);
 }
 
 void BaseController::heartbeat2serial(){

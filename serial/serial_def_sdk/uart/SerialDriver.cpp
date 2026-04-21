@@ -5,7 +5,8 @@
 #include <iostream>
 #include <cstring>      // for memset
 
-SerialDriver::SerialDriver() : fd_(-1), is_running_(false) {
+SerialDriver::SerialDriver() : is_running_(false) {
+    fd_.store(-1);
 }
 
 SerialDriver::~SerialDriver() {
@@ -18,49 +19,45 @@ bool SerialDriver::open(const std::string& device, int baudrate) {
     }
 
     device_name_ = device;
+    current_baudrate_ = baudrate;
 
-    // 打开串口: Read/Write, No controlling terminal, No delay
-    fd_ = ::open(device.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
-    if (fd_ == -1) {
-        std::cerr << "[SerialDriver] Error: Unable to open " << device << std::endl;
-        return false;
+    // 尝试打开串口
+    int new_fd = ::open(device.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
+    if (new_fd == -1) {
+        std::cerr << "[SerialDriver] Error: Unable to open " << device << ", will retry in background..." << std::endl;
+        // 注意：这里即使失败也不 return false，而是让它启动线程，在后台死循环尝试重连
+    } else {
+        fd_.store(new_fd);
+        configureTermios(current_baudrate_);
+        tcflush(new_fd, TCIOFLUSH);
+        std::cout << "[SerialDriver] Port " << device << " opened successfully." << std::endl;
     }
 
-    // 配置串口属性
-    if (!configureTermios(baudrate)) {
-        ::close(fd_);
-        fd_ = -1;
-        return false;
+    // 如果线程还没跑，就启动它（确保只启动一次）
+    if (!is_running_) {
+        is_running_ = true;
+        read_thread_ = std::thread(&SerialDriver::readLoop, this);
     }
 
-    // 清空缓冲区
-    tcflush(fd_, TCIOFLUSH);
-
-    // 启动读取线程
-    is_running_ = true;
-    read_thread_ = std::thread(&SerialDriver::readLoop, this);
-
-    std::cout << "[SerialDriver] Port " << device << " opened successfully." << std::endl;
     return true;
 }
 
 void SerialDriver::close() {
     is_running_ = false;
     
-    // 等待线程结束
     if (read_thread_.joinable()) {
         read_thread_.join();
     }
 
-    if (fd_ != -1) {
-        ::close(fd_);
-        fd_ = -1;
+    int current_fd = fd_.exchange(-1);
+    if (current_fd != -1) {
+        ::close(current_fd);
         std::cout << "[SerialDriver] Port closed." << std::endl;
     }
 }
 
 bool SerialDriver::isOpen() const {
-    return fd_ != -1;
+    return fd_.load() != -1;
 }
 
 void SerialDriver::setReceiverCallback(ReceiveCallback callback) {
@@ -68,22 +65,24 @@ void SerialDriver::setReceiverCallback(ReceiveCallback callback) {
 }
 
 int SerialDriver::write(const uint8_t* data, size_t len) {
-    if (!isOpen()) return -1;
+    int current_fd = fd_.load();
+    if (current_fd == -1) return -1;
 
-    // 加锁，保证多线程发送时数据不会穿插
     std::lock_guard<std::mutex> lock(write_mutex_);
 
     int total_written = 0;
     int remaining = len;
 
     while (remaining > 0) {
-        int n = ::write(fd_, data + total_written, remaining);
+        int n = ::write(current_fd, data + total_written, remaining);
         if (n <= 0) {
             if (errno != EAGAIN) {
-                // 写入时发生物理断开
                 std::cerr << "\n[SerialDriver] WARNING: Write failed, device lost!" << std::endl;
-                ::close(fd_); // 核心修复：立刻释放
-                fd_ = -1;
+                // 这里发生了断开，置 -1 交给 readLoop 去处理重连
+                int expected = current_fd;
+                if (fd_.compare_exchange_strong(expected, -1)) {
+                    ::close(current_fd);
+                }
             }
             return -1;
         }
@@ -94,53 +93,55 @@ int SerialDriver::write(const uint8_t* data, size_t len) {
 }
 
 void SerialDriver::readLoop() {
-    uint8_t buffer[1024]; // 读取缓冲区
+    uint8_t buffer[1024];
 
     while (is_running_) {
-        if (fd_ == -1) break;
+        int current_fd = fd_.load();
 
-        // 阻塞读取 (因为我们在 termios 设置了 VMIN/VTIME，或者 O_NDELAY 影响)
-        // 这里为了简单，如果设置了 NDELAY，read 会立即返回。
-        // 为了避免 CPU 100%，如果读不到数据，我们可以 sleep 一小会儿，或者使用 select/poll。
-        // 这里使用简单的 read，配合配置好的 termios (VTIME)。
-        
-        int n = ::read(fd_, buffer, sizeof(buffer));
+        // ======= 核心重连逻辑 =======
+        if (current_fd == -1) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(500)); // 等待0.5秒再重试
+            int new_fd = ::open(device_name_.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
+            if (new_fd != -1) {
+                fd_.store(new_fd);
+                configureTermios(current_baudrate_);
+                tcflush(new_fd, TCIOFLUSH);
+                std::cout << "\n[SerialDriver] SUCCESS: Device reconnected!" << std::endl;
+            }
+            continue; // 如果依然失败，进入下一个循环继续重试
+        }
+        // ===========================
+
+        int n = ::read(current_fd, buffer, sizeof(buffer));
 
         if (n > 0) {
-            // 读到数据了，调用回调通知上层
             if (callback_) {
-            //     printf("\n---[RAW SERIAL READ | %d bytes]---\n", n);
-            // for(int i = 0; i < n; ++i) {
-            //     printf("%02X ", buffer[i]);
-            //     if ((i + 1) % 16 == 0) { // 每16个字节换一行，方便查看
-            //         printf("\n");
-            //     }
-            // }
-            // printf("\n-----------------------------------\n");
                 callback_(buffer, n);
             }
         } else if (n == 0 || (n < 0 && errno != EAGAIN)) {
-            // n == 0 表示对端关闭(EOF)，n < 0 且非 EAGAIN 表示发生了物理断开(如 EIO)
-            std::cerr << "\n[SerialDriver] WARNING: Device disconnected! Releasing port..." << std::endl;
-            ::close(fd_);  // 核心修复：立刻释放文件描述符
-            fd_ = -1;      // 将描述符置为 -1
-            break;    
-            
+            // 发生物理断开
+            std::cerr << "\n[SerialDriver] WARNING: Device disconnected! Waiting to reconnect..." << std::endl;
+            int expected = current_fd;
+            if (fd_.compare_exchange_strong(expected, -1)) {
+                ::close(current_fd);
+            }
+            // 注意：不要 break，让循环回到头部去执行上面的重连逻辑
         } else {
-            // n == 0, EOF or timeout
             std::this_thread::sleep_for(std::chrono::milliseconds(1));
         }
     }
 }
 
 bool SerialDriver::configureTermios(int baudrate) {
+    int current_fd = fd_.load();
+    if (current_fd == -1) return false;
+
     struct termios options;
-    if (tcgetattr(fd_, &options) != 0) {
+    if (tcgetattr(current_fd, &options) != 0) {
         perror("[SerialDriver] tcgetattr failed");
         return false;
     }
 
-    // 设置波特率
     speed_t speed;
     switch (baudrate) {
         case 9600:   speed = B9600; break;
@@ -151,37 +152,26 @@ bool SerialDriver::configureTermios(int baudrate) {
     cfsetispeed(&options, speed);
     cfsetospeed(&options, speed);
 
-    // 设置为原始模式 (Raw Mode) - 8N1
-    // 类似于 cfmakeraw(&options) 但手动设置更清晰
-    options.c_cflag |= (CLOCAL | CREAD); // 忽略调制解调器控制线，启用接收器
+    options.c_cflag |= (CLOCAL | CREAD);
     options.c_cflag &= ~CSIZE;
-    options.c_cflag |= CS8;              // 8 数据位
-    options.c_cflag &= ~PARENB;          // 无校验
-    options.c_cflag &= ~CSTOPB;          // 1 停止位
-    options.c_cflag &= ~CRTSCTS;         // 无硬件流控
+    options.c_cflag |= CS8;
+    options.c_cflag &= ~PARENB;
+    options.c_cflag &= ~CSTOPB;
+    options.c_cflag &= ~CRTSCTS;
 
-    // 禁用规范模式 (Canonical Mode)，禁用回显等
     options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
-
-    // 禁用输出处理
     options.c_oflag &= ~OPOST;
-
-    // 禁用输入处理 (如回车转换行等)
     options.c_iflag &= ~(IXON | IXOFF | IXANY | ICRNL | INLCR | IGNCR);
 
-    // 设置读取超时
-    // VMIN = 0, VTIME = 1: 读取是非阻塞的，但会等待最多 0.1 秒
     options.c_cc[VMIN] = 0;
     options.c_cc[VTIME] = 1; 
 
-    // 应用设置
-    if (tcsetattr(fd_, TCSANOW, &options) != 0) {
+    if (tcsetattr(current_fd, TCSANOW, &options) != 0) {
         perror("[SerialDriver] tcsetattr failed");
         return false;
     }
 
-    // 因为前面 open 用了 O_NDELAY，这里重新恢复为阻塞模式（受 VTIME 控制）
-    fcntl(fd_, F_SETFL, 0); 
+    fcntl(current_fd, F_SETFL, 0); 
 
     return true;
 }

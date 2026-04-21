@@ -1,6 +1,0 @@
-Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/pb_rm_interfaces -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/pb_rm_interfaces
-Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/pb_rm_interfaces -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/pb_rm_interfaces
-Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/pb_rm_interfaces -- -j16 -l16
-Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/pb_rm_interfaces -- -j16 -l16
-Invoking command in '/home/hjh/RMserial/build/pb_rm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/pb_rm_interfaces
-Invoked command in '/home/hjh/RMserial/build/pb_rm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/pb_rm_interfaces

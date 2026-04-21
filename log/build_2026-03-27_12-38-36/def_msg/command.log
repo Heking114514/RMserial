@@ -1,6 +1,0 @@
-Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/def_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/def_msg
-Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjh/RMserial/serial/def_msg -DCMAKE_INSTALL_PREFIX=/home/hjh/RMserial/install/def_msg
-Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/def_msg -- -j16 -l16
-Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjh/RMserial/build/def_msg -- -j16 -l16
-Invoking command in '/home/hjh/RMserial/build/def_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/def_msg
-Invoked command in '/home/hjh/RMserial/build/def_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjh/RMserial/build/def_msg

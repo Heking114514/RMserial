@@ -133,7 +133,7 @@ public:
         imu2_pub = 
             this->create_publisher<sensor_msgs::msg::Imu>("imu/data_2",10);
         joint_pub = 
-            this->create_publisher<sensor_msgs::msg::JointState>("joint_states",10);
+            this->create_publisher<sensor_msgs::msg::JointState>("joint_state",10);
 
         /*================================ time callback =================================*/
 
